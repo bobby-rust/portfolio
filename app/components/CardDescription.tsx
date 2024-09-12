@@ -1,9 +1,7 @@
 import { FlipWords } from "@/components/ui/flip-words";
 import React from "react";
 
-type Props = {};
-
-export default function CardDescription({}: Props) {
+export default function CardDescription() {
     const words = ["Software Engineer", "Full Stack Developer", "Web Developer", "Problem Solver"];
 
     return (

@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { FlipWords } from "../../components/ui/flip-words";
-type Props = {};
 import { IconDownload } from "@tabler/icons-react";
 import Link from "next/link";
 
-export default function Card({}: Props) {
+export default function Card() {
     const words = ["Software Engineer", "Full Stack Developer", "Web Developer", "Problem Solver"];
     return (
         <div className="flex flex-col justify-center items-center w-1/2 gap-24 text-[#EEEEEE] z-20">
