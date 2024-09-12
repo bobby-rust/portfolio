@@ -19,7 +19,7 @@ export default function Card() {
                         />
                     </div>
                     <h1 className="font-bold xs:text-2xl sm:text-3xl md:text-4xl">
-                        👋 Hey, I'm Rob Rust
+                        👋 Hey, I&#39;m Rob Rust
                     </h1>
                 </div>
                 <CardDescription />

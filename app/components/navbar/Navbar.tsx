@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-export default function Navbar({}: Props) {
+export default function Navbar() {
     return (
         <div className="h-16 flex justify-center items-center p-4 mt-4">
             <ul className="flex gap-12 text-[#EEEEEE] z-50 backdrop-blur rounded-full p-4">

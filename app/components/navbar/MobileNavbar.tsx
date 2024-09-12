@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-export default function MobileNavbar({}: Props) {
+export default function MobileNavbar() {
     return (
         <div className="h-16 flex justify-center items-center mt-4">
             <ul className="flex text-[#EEEEEE] text-sm z-50 backdrop-blur rounded-full">

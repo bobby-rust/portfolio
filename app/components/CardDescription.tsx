@@ -9,7 +9,7 @@ export default function CardDescription() {
             <div className="w-1/8"></div>
             <div className="xs:w-3/4 md:w-full">
                 <div className="xs:ml-8 sm:ml-0 md:ml-12 xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl min-w-[390px]">
-                    I'm a<FlipWords words={words} />
+                    I&#39;m a<FlipWords words={words} />
                 </div>
                 <p className="xs:text-lg sm:text-xl md:text-2xl lg:text-3xl line-clamp-1 xs:text-center sm:text-left md:text-center">
                     👨🏼‍💻 Based in Potsdam, NY📍

@@ -21,7 +21,7 @@ export default function Card() {
                 </div>
                 <div className="flex flex-col justify-center">
                     <div className="flex flex-col gap-8">
-                        <h1 className="font-bold text-5xl">👋 Hey, I'm Rob Rust</h1>
+                        <h1 className="font-bold text-5xl">👋 Hey, I&#39;m Rob Rust</h1>
                         <div className="text-4xl w-[500px]">
                             I'm a<FlipWords words={words} />
                         </div>
