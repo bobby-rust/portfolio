@@ -1,14 +1,13 @@
 import React from "react";
 import { useId } from "react";
-import { Highlight } from "../../../components/ui/hero-highlight";
+import FeaturesHeader from "./FeaturesHeader";
+
 export function FeaturesGrid() {
     return (
-        <div className="flex flex-col gap-6 py-20 lg:py-40">
+        <div className="flex flex-col gap-6 py-20 lg:py-40 px-16">
             <div className="">
                 <div className="w-full flex flex-col gap-2">
-                    <h2 className="font-semibold text-4xl leading-tight tracking-tight">
-                        Bring your vision to life with <Highlight>custom web solutions.</Highlight>
-                    </h2>
+                    <FeaturesHeader />
                     <p className="text-lg leading-relaxed tracking-wide">
                         I'm a full-stack developer who specializes in building beautiful,
                         performant, and scalable web applications.
