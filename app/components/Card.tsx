@@ -23,7 +23,7 @@ export default function Card() {
                     <div className="flex flex-col gap-8">
                         <h1 className="font-bold text-5xl">👋 Hey, I&#39;m Rob Rust</h1>
                         <div className="text-4xl w-[500px]">
-                            I'm a<FlipWords words={words} />
+                            I&#39;m a<FlipWords words={words} />
                         </div>
                         <p className="text-3xl">👨🏼‍💻 Based in Potsdam, NY📍</p>
                         <ul className="flex gap-12">

@@ -9,7 +9,7 @@ export function FeaturesGrid() {
                 <div className="w-full flex flex-col gap-2">
                     <FeaturesHeader />
                     <p className="text-lg leading-relaxed tracking-wide">
-                        I'm a full-stack developer who specializes in building beautiful,
+                        I&#39;m a full-stack developer who specializes in building beautiful,
                         performant, and scalable web applications.
                     </p>
                 </div>
@@ -100,7 +100,7 @@ export const Grid = ({ pattern, size }: { pattern?: number[][]; size?: number })
     );
 };
 
-export function GridPattern({ width, height, x, y, squares, ...props }: any) {
+export function GridPattern({ width, height, x, y, squares, ...props }) {
     const patternId = useId();
 
     return (
@@ -120,7 +120,7 @@ export function GridPattern({ width, height, x, y, squares, ...props }: any) {
             <rect width="100%" height="100%" strokeWidth={0} fill={`url(#${patternId})`} />
             {squares && (
                 <svg x={x} y={y} className="overflow-visible">
-                    {squares.map(([x, y]: any) => (
+                    {squares.map(([x, y]) => (
                         <rect
                             strokeWidth="0"
                             key={`${x}-${y}`}
