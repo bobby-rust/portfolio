@@ -31,7 +31,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${inter.className} antialiased flex flex-col justify-center items-center text-[#333333]`}
+                className={`${inter.className} antialiased flex flex-col justify-center items-center text-[#333333] bg-[#EEEEEE]`}
             >
                 {children}
             </body>

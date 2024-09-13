@@ -8,7 +8,7 @@ export function FeaturesGrid() {
             <div className="">
                 <div className="w-full flex flex-col gap-2">
                     <FeaturesHeader />
-                    <p className="text-lg leading-relaxed tracking-wide">
+                    <p className="text-lg leading-relaxed tracking-wide text-neutral-600">
                         I&#39;m a full-stack developer who specializes in building beautiful,
                         performant, and scalable web applications.
                     </p>

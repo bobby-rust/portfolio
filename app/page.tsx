@@ -1,5 +1,6 @@
 import { BackgroundBoxesHero } from "./components/BackgroundBoxesHero";
 import { FeaturesGrid } from "./components/features/FeaturesGrid";
+import Projects from "./components/projects/Projects";
 
 export default function Home() {
     return (
@@ -7,6 +8,7 @@ export default function Home() {
             <main className="w-full flex flex-col justify-center items-center">
                 <BackgroundBoxesHero />
                 <FeaturesGrid />
+                <Projects />
             </main>
         </div>
     );
