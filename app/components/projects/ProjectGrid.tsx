@@ -1,13 +1,6 @@
-import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { ThreeDCard } from "./3DCard";
-import {
-    IconClipboardCopy,
-    IconFileBroken,
-    IconSignature,
-    IconTableColumn,
-} from "@tabler/icons-react";
 
 export function ProjectGrid() {
     return (
