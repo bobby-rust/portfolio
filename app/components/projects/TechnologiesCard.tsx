@@ -65,7 +65,7 @@ const Skeleton = () => {
     ];
 
     useEffect(() => {
-        // @ts-expect-error
+        // @ts-expect-error the types are wrong
         animate(sequence, {
             repeat: Infinity,
             repeatDelay: 1,
