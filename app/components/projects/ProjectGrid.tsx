@@ -122,22 +122,27 @@ const queueSocialTestimonials = [
     {
         quote: "QueueSocial has revolutionized the way I manage my social media accounts. Scheduling posts in advance has saved me hours each week!",
         name: "Emily R.",
+        title: "",
     },
     {
         quote: "As a social media manager, QueueSocial has become an essential tool. It’s simple to use and ensures my content is always posted at the right time.",
         name: "David L.",
+        title: "",
     },
     {
         quote: "QueueSocial’s intuitive interface and reliable scheduling have boosted my online presence. I couldn’t be happier with the results.",
         name: "Sarah M.",
+        title: "",
     },
     {
         quote: "I love how easy it is to schedule and manage all my posts in one place with QueueSocial. It's a real time-saver!",
         name: "Jason B.",
+        title: "",
     },
     {
         quote: "QueueSocial has been a game-changer for my business. My social media is now always active and engaging, without needing constant attention.",
         name: "Rebecca P.",
+        title: "",
     },
 ];
 
