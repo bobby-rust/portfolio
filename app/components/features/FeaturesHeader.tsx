@@ -5,12 +5,12 @@ import { Highlight } from "../../../components/ui/hero-highlight";
 
 export default function FeaturesHeader() {
     const [windowSize, setWindowSize] = useState({
-        width: typeof window !== "undefined" ? window.innerWidth : 0,
-        height: typeof window !== "undefined" ? window.innerHeight : 0,
+        width: 0,
+        height: 0,
     });
 
     useEffect(() => {
-        if (typeof window === "undefined") return;
+        if (!window) return;
 
         setWindowSize({ width: window.innerWidth, height: window.innerHeight });
 

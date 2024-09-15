@@ -1,6 +1,7 @@
 import { BackgroundBoxesHero } from "./components/BackgroundBoxesHero";
 import { FeaturesGrid } from "./components/features/FeaturesGrid";
 import Projects from "./components/projects/Projects";
+import Typewriter from "./components/Typewriter";
 
 export default function Home() {
     return (

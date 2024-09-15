@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FlipWords } from "../../components/ui/flip-words";
 import { IconDownload } from "@tabler/icons-react";
 import Link from "next/link";
+import Typewriter from "./Typewriter";
 
 export default function Card() {
     const words = ["Software Engineer", "Full Stack Developer", "Web Developer", "Problem Solver"];
@@ -23,7 +24,7 @@ export default function Card() {
                     <div className="flex flex-col gap-8">
                         <h1 className="font-bold text-5xl">👋 Hey, I&#39;m Rob Rust</h1>
                         <div className="text-4xl w-[500px]">
-                            I&#39;m a<FlipWords words={words} />
+                            I&#39;m a<Typewriter words={words} />
                         </div>
                         <p className="text-3xl">👨🏼‍💻 Based in Potsdam, NY📍</p>
                         <ul className="flex gap-12">
@@ -51,9 +52,9 @@ export default function Card() {
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
                                         className="lucide lucide-mail"
                                     >
                                         <rect width="20" height="16" x="2" y="4" rx="2" />
