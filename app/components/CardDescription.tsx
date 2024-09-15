@@ -1,4 +1,4 @@
-import { FlipWords } from "@/components/ui/flip-words";
+// import { FlipWords } from "@/components/ui/flip-words";
 import React from "react";
 import Typewriter from "@/app/components/Typewriter";
 

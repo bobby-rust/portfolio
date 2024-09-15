@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Boxes } from "../../components/ui/background-boxes";
+// import { Boxes } from "../../components/ui/background-boxes";
 import Card from "../components/Card";
 import Navbar from "../components/navbar/Navbar";
 import MobileCard from "./MobileCard";

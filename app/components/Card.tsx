@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { FlipWords } from "../../components/ui/flip-words";
+// import { FlipWords } from "../../components/ui/flip-words";
 import { IconDownload } from "@tabler/icons-react";
 import Link from "next/link";
 import Typewriter from "./Typewriter";
