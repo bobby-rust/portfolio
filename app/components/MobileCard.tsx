@@ -3,9 +3,10 @@ import Image from "next/image";
 import { IconDownload } from "@tabler/icons-react";
 import CardDescription from "./CardDescription";
 
-export default function Card() {
+export default function MobileCard() {
     return (
-        <div className="flex flex-col justify-center items-center md:w-1/2 gap-24 text-[#EEEEEE] z-20">
+        <div className="flex flex-col justify-center items-center md:w-1/2 gap-24 z-20">
+            sup
             <div className="flex flex-col gap-8 justify-center items-center">
                 <div>
                     <div className="flex rounded-full border-2 m-auto overflow-hidden w-48 h-48">
@@ -26,7 +27,7 @@ export default function Card() {
                 <ul className="flex gap-8">
                     <li className="text-center flex flex-col justify-center items-center">
                         <Image
-                            src="/GitHub_Invertocat_Light.svg"
+                            src="/GitHub_Invertocat_Dark.svg"
                             alt="github"
                             width={50}
                             height={50}

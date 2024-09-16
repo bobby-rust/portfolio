@@ -4,7 +4,10 @@ import { LinkPreview } from "@/components/ui/link-preview";
 
 export default function Projects() {
     return (
-        <div className="flex flex-col justify-center items-center pb-20 gap-4 max-w-7xl">
+        <div
+            id="my-work"
+            className="flex flex-col justify-center items-center pb-20 gap-4 max-w-7xl"
+        >
             <div className="w-full">
                 <h1 className="text-4xl font-semibold tracking-tight leading-tight">
                     Explore My Work

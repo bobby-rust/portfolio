@@ -2,9 +2,9 @@ import React from "react";
 import { useId } from "react";
 import FeaturesHeader from "./FeaturesHeader";
 
-export function FeaturesGrid() {
+export default function FeaturesGrid() {
     return (
-        <div className="flex flex-col gap-6 py-20 lg:py-40 px-16">
+        <div id="services" className="flex flex-col gap-6 py-20 lg:py-40 px-16">
             <div className="">
                 <div className="w-full flex flex-col gap-2">
                     <FeaturesHeader />
