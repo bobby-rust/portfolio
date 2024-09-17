@@ -5,7 +5,12 @@ import Link from "next/link";
 import { Download, Phone, Mail } from "lucide-react";
 
 export default function Hero() {
-    const words = ["Software Engineer", "Full Stack Developer", "Web Developer", "Problem Solver"];
+    const words = [
+        "Software Engineer",
+        "Full Stack Developer",
+        "Web Developer",
+        "Problem Solver",
+    ];
     return (
         <div className="h-[90vh] w-full flex flex-col items-center">
             <div className="h-full flex justify-center items-center">
@@ -20,8 +25,9 @@ export default function Hero() {
                                 Based in Potsdam, NY📍
                             </div>
                             <p className="max-w-xl text-secondary-foreground">
-                                I specialize in building high-performance web applications that
-                                prioritize both user experience and clean code. Let's create
+                                I specialize in building high-performance web
+                                applications that prioritize both user
+                                experience and clean code. Let&#39;s create
                                 something exceptional.
                             </p>
                         </div>
@@ -36,7 +42,9 @@ export default function Hero() {
                             <div className="flex justify-center items-center relative">
                                 <div className="animate-ping w-3 h-3 rounded-full bg-green-500 absolute left-0"></div>
                                 <div className="w-3 h-3 rounded-full bg-green-500 absolute left-0"></div>
-                                <span className="ml-5">Currently accepting clients</span>
+                                <span className="ml-5">
+                                    Currently accepting clients
+                                </span>
                             </div>
                         </div>
                         <div>
