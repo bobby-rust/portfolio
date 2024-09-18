@@ -6,6 +6,7 @@
     :root {
         --background: #fbfbf9;
         --foreground: #333333;
+        --gray: #cccccc;
         --card: 0 0% 100%;
         --card-foreground: #eeeeee;
         --popover: 0 0% 100%;
@@ -63,10 +64,8 @@
     * {
         @apply border-border;
     }
+
     html {
         @apply scroll-smooth;
     }
-    /* body {
-        @apply bg-background text-foreground;
-    } */
 }
