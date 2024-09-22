@@ -23,10 +23,10 @@ export default function Hero() {
                         alt="marker underline"
                         width={350}
                         height={20}
-                        className="absolute top-[-50%] left-[-5%] select-none w-80 h-20"
+                        className="absolute bottom-[-80%] right-[70%] select-none w-[380px] h-20"
                     />
                 </h1>
-                <div className="flex">
+                <div className="flex gap-24">
                     <div className="flex flex-col gap-4 items-center justify-center md:justify-start md:items-start md:max-w-[70%]">
                         <div className="flex flex-col md:flex-row gap-4 justify-center items-center w-full md:justify-start md:items-start">
                             <div className="flex flex-col gap-4 w-full">
@@ -131,15 +131,22 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
-                    <div className="md:w-1/2 h-full">
-                        <div className="rounded-full shadow-even shadow-black hidden w-0 h-0 md:w-60 md:h-60 lg:w-80 lg:h-80 md:block overflow-hidden">
+                    <div className="md:w-1/2 h-full relative">
+                        <Image
+                            src="/BlackCatWebDev.png"
+                            alt="black cat logo"
+                            width={400}
+                            height={400}
+                            className="absolute bottom-[-20%] right-[50%]"
+                        />
+                        <div className="rounded-full shadow-even shadow-black hidden w-0 h-0 md:w-60 md:h-60 lg:w-[400px] lg:h-[400px] md:block overflow-hidden z-50">
                             <Image
                                 src="/headshot2.webp"
                                 alt="headshot"
-                                width={378}
-                                height={429}
+                                width={578}
+                                height={629}
                                 priority={true}
-                                className="translate-y-[-10%]"
+                                className="z-50 translate-y-[-10%]"
                             />
                         </div>
                     </div>

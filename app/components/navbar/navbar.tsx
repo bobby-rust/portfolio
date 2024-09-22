@@ -1,15 +1,23 @@
 import Link from "next/link";
 import React from "react";
 import MobileMenu from "./mobile-menu";
+import Image from "next/image";
 
 export default function Navbar() {
     return (
         <div className="flex flex-col justify-center items-center w-screen">
             <div className="h-16 w-full flex justify-between items-center px-4">
                 <div className="text-lg xl:text-3xl font-bold">
-                    <span>🐈‍⬛</span>
-                    <span className="">Felix</span>
-                    <span className="text-green-500">FullStack</span>
+                    {/* <span>🐈‍⬛</span> */}
+                    <Image
+                        src="/BlackCatWebDev.png"
+                        alt="black cat logo"
+                        width={50}
+                        height={50}
+                        className="inline"
+                    />
+                    <span className="">BlackCat</span>
+                    <span className="text-green-500">WebDev</span>
                 </div>
                 <ul className="hidden sm:flex justify-center items-center gap-2 md:gap-8 xl:gap-12 text-xs md:text-base xl:text-lg">
                     <li className="hover:cursor-pointer hover:underline">
