@@ -13,21 +13,21 @@ export default function Hero() {
     ];
 
     return (
-        <div className="w-full flex flex-col gap-4 p-5 lg:px-20 py-10 justify-center items-center">
-            <div className="h-full w-full flex flex-col gap-24 justify-center p-5 md:px-32 md:py-20 2xl:w-[70vw]">
-                <h1 className="relative font-bold text-xl text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl tracking-tighter">
-                    {/* 👋 Hey, I&#39;m Rob Rust */}
-                    <span>Modernize Your Business.</span>
-                    <Image
-                        src="/marker-underline.png"
-                        alt="marker underline"
-                        width={350}
-                        height={20}
-                        className="absolute bottom-[-80%] right-[70%] select-none w-[380px] h-20"
-                    />
-                </h1>
-                <div className="flex gap-24">
-                    <div className="flex flex-col gap-4 items-center justify-center md:justify-start md:items-start md:max-w-[70%]">
+        <div className="w-full flex flex-col gap-4 p-5 3xl:px-20 py-10 justify-center items-center">
+            <div className="h-full w-full flex flex-col items-evenly justify-center p-5 2xl:px-32 md:py-20 3xl:w-[70vw]">
+                {/* <h1 className="relative font-bold text-xl text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl tracking-tighter"> */}
+                {/* 👋 Hey, I&#39;m Rob Rust */}
+                {/*     <span>Modernize Your Business.</span> */}
+                {/*     <Image */}
+                {/*         src="/marker-underline.png" */}
+                {/*         alt="marker underline" */}
+                {/*         width={350} */}
+                {/*         height={20} */}
+                {/*         className="absolute bottom-[-80%] right-[70%] select-none w-[380px] h-20" */}
+                {/*     /> */}
+                {/* </h1> */}
+                <div className="flex lg:gap-24 justify-center items-center w-full">
+                    <div className="flex flex-col gap-4 items-center justify-center w-1/2 md:justify-start md:items-start md:max-w-[70%]">
                         <div className="flex flex-col md:flex-row gap-4 justify-center items-center w-full md:justify-start md:items-start">
                             <div className="flex flex-col gap-4 w-full">
                                 <h2 className="font-bold text-lg text-center md:text-left md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl tracking-tighter ">
@@ -68,7 +68,7 @@ export default function Hero() {
                                             Learn more
                                         </button>
                                     </div>
-                                    <div className="h-[1px] w-full md:w-[1px] md:h-10 bg-gray"></div>
+                                    <div className="h-[1px] w-52 md:w-[1px] md:h-10 bg-gray"></div>
                                     <div className="flex text-sm justify-center items-center relative  md:ml-0">
                                         <div className="animate-ping w-3 h-3 rounded-full bg-green-500 absolute left-0"></div>
                                         <div className="w-3 h-3 rounded-full bg-green-500 absolute left-0"></div>
@@ -131,7 +131,7 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
-                    <div className="md:w-1/2 h-full relative">
+                    <div className="md:w-60 h-60 lg:w-auto lg:h-full relative">
                         <Image
                             src="/BlackCatWebDev.png"
                             alt="black cat logo"
@@ -139,7 +139,7 @@ export default function Hero() {
                             height={400}
                             className="absolute bottom-[-20%] right-[50%]"
                         />
-                        <div className="rounded-full shadow-even shadow-black hidden w-0 h-0 md:w-60 md:h-60 lg:w-[400px] lg:h-[400px] md:block overflow-hidden z-50">
+                        <div className="rounded-full shadow-even shadow-black hidden w-0 h-0 md:w-60 md:h-60 lg:w-[350px] lg:h-[350px] 2xl:w-[350px] 2xl:h-[350px] 4xl:w-[400px] 4xl:h-[400px] md:block overflow-hidden z-50">
                             <Image
                                 src="/headshot2.webp"
                                 alt="headshot"
