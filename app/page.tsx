@@ -2,6 +2,7 @@ import Hero from "./components/hero";
 // import FeaturesGrid from "./components/features/FeaturesGrid";
 import Navbar from "./components/navbar/navbar";
 // import Projects from "./components/projects/Projects";
+import PhoneMockup from "./components/phone-mockup";
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
                 <Hero />
                 {/* <FeaturesGrid /> */}
                 {/* <Projects /> */}
+                <PhoneMockup />
             </main>
         </div>
     );

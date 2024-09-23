@@ -1,5 +1,5 @@
 import React from "react";
-import Typewriter from "./Typewriter";
+import Typewriter from "./typewriter";
 import Image from "next/image";
 import Link from "next/link";
 import { Download, Phone, Mail } from "lucide-react";
