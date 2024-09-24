@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function MobileMenu() {
     const [open, setOpen] = useState(false);
     return (
-        <div className="sm:hidden sm:w-0 flex justify-center">
+        <div className="md:hidden md:w-0 flex justify-center">
             <button onClick={() => setOpen(true)}>
                 <Menu size={30} />
             </button>

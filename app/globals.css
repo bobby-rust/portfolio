@@ -7,6 +7,37 @@
         box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.5);
         border-radius: 12px;
     }
+
+    .h2 {
+        font-size: 1.5rem; /* text-2xl */
+        padding-bottom: 1.25rem; /* pb-5 */
+        font-weight: bold; /* font-bold */
+        text-align: center; /* text-center */
+    }
+
+    @media (min-width: 768px) {
+        .h2 {
+            font-size: 1.875rem; /* md:text-3xl */
+            text-align: left; /* md:text-left */
+        }
+    }
+
+    .section {
+        width: 100%; /* w-full */
+        display: flex; /* flex */
+        flex-direction: column; /* flex-col */
+        justify-content: center; /* justify-center */
+        align-items: center; /* items-center */
+        padding-left: 2.5rem; /* px-10 */
+        padding-right: 2.5rem; /* px-10 */
+    }
+
+    @media (min-width: 768px) {
+        .section {
+            padding-left: 5rem; /* md:px-20 */
+            padding-right: 5rem; /* md:px-20 */
+        }
+    }
 }
 
 @layer base {
@@ -18,7 +49,7 @@
         --card-foreground: #eeeeee;
         --popover: 0 0% 100%;
         --popover-foreground: 222.2 84% 4.9%;
-        --primary: #fafbf6;
+        --primary: rgb(21 128 61);
         --primary-foreground: #eeeeee;
         --secondary: #fafbf6;
         --secondary-foreground: #666666;

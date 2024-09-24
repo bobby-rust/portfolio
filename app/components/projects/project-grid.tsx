@@ -7,7 +7,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export function ProjectGrid() {
     return (
-        <BentoGrid className="max-w-7xl mx-auto md:auto-rows-[40rem]">
+        <BentoGrid className="md:auto-rows-[40rem]">
             {items.map((item, i) => (
                 <BentoGridItem
                     key={i}
@@ -27,7 +27,7 @@ const EldenForgeSkeleton = () => (
         loop
         muted
         playsInline
-        style={{ width: "100%", height: "auto" }}
+        style={{ width: "100 % ", height: "auto" }}
         src="/videos/eldenforge.webm"
     ></video>
 );
@@ -87,18 +87,29 @@ const EldenForgeDescriptionSkeleton = () => (
                     </div>
                 </div>
                 <p className=" leading-relaxed tracking-wide">
-                    A random build generator for Elden Ring with custom build parameters. Built for
-                    the community with hundreds of daily users.
+                    A random build generator for Elden Ring with custom build
+                    parameters. Built for the community with hundreds of daily
+                    users.
                 </p>
             </li>
             <li>
                 <h2 className="font-semibold text-xl">Technologies</h2>
                 <ul className="flex gap-4 p-5 justify-center">
                     <li>
-                        <Image src="/react-logo.png" width={50} height={50} alt="React.js" />
+                        <Image
+                            src="/react-logo.png"
+                            width={50}
+                            height={50}
+                            alt="React.js"
+                        />
                     </li>
                     <li>
-                        <Image src="/tailwind-css-logo.png" width={60} height={60} alt="Next.js" />
+                        <Image
+                            src="/tailwind-css-logo.png"
+                            width={60}
+                            height={60}
+                            alt="Next.js"
+                        />
                     </li>
                     <li>
                         <Image
@@ -112,7 +123,11 @@ const EldenForgeDescriptionSkeleton = () => (
             </li>
             <li>
                 <h2 className="font-semibold text-xl">Testimonials</h2>
-                <InfiniteMovingCards items={eldenForgeTestimonials} direction="left" speed="slow" />
+                <InfiniteMovingCards
+                    items={eldenForgeTestimonials}
+                    direction="left"
+                    speed="slow"
+                />
             </li>
         </ul>
     </div>
@@ -157,28 +172,54 @@ const QueueSocialDescriptionSkeleton = () => (
                     </div>
                 </div>
                 <p className=" leading-relaxed tracking-wide">
-                    A social media post scheduler that interacts with the Facebook, Instagram, and
-                    Twitter APIs. Designed to allow users to schedule posts across multiple
-                    platforms from a single interface, automating the publishing process.
+                    A social media post scheduler that interacts with the
+                    Facebook, Instagram, and Twitter APIs. Designed to allow
+                    users to schedule posts across multiple platforms from a
+                    single interface, automating the publishing process.
                 </p>
             </li>
             <li>
                 <h2 className="font-semibold text-xl">Technologies</h2>
                 <ul className="flex gap-4 p-5">
                     <li>
-                        <Image src="/next-js-logo.png" width={100} height={100} alt="Next.js" />
+                        <Image
+                            src="/next-js-logo.png"
+                            width={100}
+                            height={100}
+                            alt="Next.js"
+                        />
                     </li>
                     <li>
-                        <Image src="/tailwind-css-logo.png" width={70} height={70} alt="Next.js" />
+                        <Image
+                            src="/tailwind-css-logo.png"
+                            width={70}
+                            height={70}
+                            alt="Next.js"
+                        />
                     </li>
                     <li>
-                        <Image src="/mongo-db-logo.png" width={100} height={100} alt="Next.js" />
+                        <Image
+                            src="/mongo-db-logo.png"
+                            width={100}
+                            height={100}
+                            alt="Next.js"
+                        />
                     </li>
                     <li>
-                        <Image src="/node-js-logo.png" width={100} height={100} alt="Next.js" />
+                        <Image
+                            src="/node-js-logo.png"
+                            width={100}
+                            height={100}
+                            alt="Next.js"
+                        />
                     </li>
                     <li>
-                        <Image src="/express-js-logo.png" width={100} height={100} alt="Next.js" />
+                        <Image
+                            src="/express-js-logo.png"
+                            width={100}
+                            height={100}
+                            alt="Next.js"
+                        />
                     </li>
                 </ul>
             </li>
@@ -279,7 +320,8 @@ const items = [
     },
     {
         title: "QueueSocial",
-        description: "Understand the impact of effective communication in our lives.",
+        description:
+            "Understand the impact of effective communication in our lives.",
         header: <QueueSocialSkeleton />,
         className: "md:col-span-2",
         icon: (

@@ -17,9 +17,9 @@ export default function Navbar() {
                         className="inline"
                     />
                     <span className="">blackcat</span>
-                    <span className="text-green-500">webdev</span>
+                    <span className="text-primary">webdev</span>
                 </div>
-                <ul className="hidden sm:flex justify-center items-center gap-2 md:gap-8 xl:gap-12 text-xs md:text-base xl:text-lg">
+                <ul className="hidden md:flex justify-center items-center gap-2 md:gap-8 xl:gap-12 text-xs md:text-base xl:text-lg">
                     <li className="hover:cursor-pointer hover:underline">
                         <Link href="#about" className="">
                             About
