@@ -97,15 +97,23 @@ export const InfiniteMovingCards = ({
             >
                 {items.map((item) => (
                     <li
-                        className="relative flex-shrink-0  px-8 py-6"
+                        className="relative flex-shrink-0  px-8 py-6 "
                         key={item.title}
                     >
-                        <Image
-                            src={item.imgSrc}
-                            alt={item.imgAlt}
-                            width={100}
-                            height={100}
-                        />
+                        <div className="flex justify-center items-center h-full w-full">
+                            {/* <span className="flex justify-center text-xl leading-[1.6] text-gray-600 font-normal"> */}
+                            {/*     {item.title} */}
+                            {/* </span> */}
+                            <div className="flex justify-center items-center p-5">
+                                <Image
+                                    src={item.imgSrc}
+                                    alt={item.imgAlt}
+                                    width={100}
+                                    height={100}
+                                    className="w-full h-full"
+                                />
+                            </div>
+                        </div>
                         {/* <blockquote> */}
                         {/*     <div */}
                         {/*         aria-hidden="true" */}
@@ -119,9 +127,6 @@ export const InfiniteMovingCards = ({
                         {/* <span className=" text-sm leading-[1.6] text-gray-600 font-normal"> */}
                         {/*     {item.name} */}
                         {/* </span> */}
-                        <span className=" text-sm leading-[1.6] text-gray-600 font-normal">
-                            {item.title}
-                        </span>
                         {/*         </span> */}
                         {/*     </div> */}
                         {/* </blockquote> */}

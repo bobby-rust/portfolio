@@ -10,37 +10,15 @@ interface ProjectCardProps {
         imgSrc: string;
         imgAlt: string;
     }[];
+    role: string;
 }
-
-// const items = [
-//     {
-//         title: "NextJS",
-//         imgSrc: "/next-js-logo.png",
-//         imgAlt: "NextJS logo",
-//     },
-//
-//     {
-//         title: "NextJS",
-//         imgSrc: "/next-js-logo.png",
-//         imgAlt: "NextJS logo",
-//     },
-//     {
-//         title: "NextJS",
-//         imgSrc: "/next-js-logo.png",
-//         imgAlt: "NextJS logo",
-//     },
-//     {
-//         title: "NextJS",
-//         imgSrc: "/next-js-logo.png",
-//         imgAlt: "NextJS logo",
-//     },
-// ];
 
 export default function ProjectCard({
     name,
     vidSrc,
     desc,
     items,
+    role,
 }: ProjectCardProps) {
     return (
         <div className="flex w-full bg-white p-5 border-2 border-gray rounded-lg shadow-xl sm:max-w-md md:max-w-full">
@@ -60,14 +38,27 @@ export default function ProjectCard({
                     </div>
                 </div>
             </div>
-            <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                style={{ width: "100%", height: "auto" }}
-                src={vidSrc}
-            ></video>
+            <div className="flex flex-col gap-4">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={{
+                        width: "100%",
+                        height: "auto",
+                        justifySelf: "start",
+                        alignSelf: "start",
+                    }}
+                    src={vidSrc}
+                ></video>
+                <div>
+                    <h3 className="font-semibold md:text-xl self-start">
+                        Role
+                    </h3>
+                    <p>{role}</p>
+                </div>
+            </div>
         </div>
     );
 }

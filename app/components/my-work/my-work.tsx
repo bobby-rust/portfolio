@@ -17,6 +17,16 @@ const queueSocialItems = [
         imgSrc: "/next-js-logo.png",
         imgAlt: "NextJS Logo",
     },
+    {
+        title: "Stripe",
+        imgSrc: "/stripe-logo.png",
+        imgAlt: "Stripe logo",
+    },
+    {
+        title: "NextAuth",
+        imgSrc: "/next-auth-logo.png",
+        imgAlt: "NextAuth Logo",
+    },
 ];
 
 const algoDuelsItems = [
@@ -45,8 +55,23 @@ const algoDuelsItems = [
 const eldenForgeItems = [
     {
         title: "ReactJS",
-        imgSrc: "/react-js-logo.png",
+        imgSrc: "/react-logo.png",
         imgAlt: "ReactJS Logo",
+    },
+    {
+        title: "Google Gemini AI",
+        imgSrc: "/google-gemini-logo.png",
+        imgAlt: "Gemini logo",
+    },
+    {
+        title: "TailwindCSS",
+        imgSrc: "/tailwind-css-logo.png",
+        imgAlt: "TailwindCSS Logo",
+    },
+    {
+        title: "NodeJS",
+        imgSrc: "/node-js-logo.png",
+        imgAlt: "NodeJS Logo",
     },
 ];
 
@@ -64,7 +89,7 @@ export default function MyWork() {
     return (
         <section className="section">
             <h2 className="md:self-start h2">My Work</h2>
-            <div>
+            <div className=" max-w-full">
                 <ul className="flex flex-col gap-6">
                     <li>
                         <ProjectCard
