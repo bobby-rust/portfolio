@@ -24,12 +24,16 @@
 
     .section {
         width: 100%; /* w-full */
+        max-width: 80vw;
         display: flex; /* flex */
         flex-direction: column; /* flex-col */
         justify-content: center; /* justify-center */
         align-items: center; /* items-center */
         padding-left: 2.5rem; /* px-10 */
         padding-right: 2.5rem; /* px-10 */
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        box-sizing: border-box;
     }
 
     @media (min-width: 768px) {
@@ -49,7 +53,7 @@
         --card-foreground: #eeeeee;
         --popover: 0 0% 100%;
         --popover-foreground: 222.2 84% 4.9%;
-        --primary: rgb(21 128 61);
+        --primary: #15803d;
         --primary-foreground: #eeeeee;
         --secondary: #fafbf6;
         --secondary-foreground: #666666;
@@ -101,6 +105,7 @@
 @layer base {
     * {
         @apply border-border;
+        @apply box-border;
     }
 
     html {

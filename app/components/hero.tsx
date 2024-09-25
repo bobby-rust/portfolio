@@ -14,8 +14,8 @@ export default function Hero() {
     ];
 
     return (
-        <div className="w-full flex flex-col gap-4 p-5 justify-center items-center">
-            <div className="flex p-5 2xl:px-32 md:py-20 3xl:w-[70vw]">
+        <div className="w-full flex flex-col gap-4 p-5 justify-center items-center 4xl:max-w-[60vw] max-w-screen">
+            <div className="flex p-5 2xl:px-32 md:py-20 3xl:w-[70vw] 4xl:max-w-full">
                 {/* <h1 className="relative font-bold text-xl text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl tracking-tighter"> */}
                 {/* 👋 Hey, I&#39;m Rob Rust */}
                 {/*     <span>Modernize Your Business.</span> */}

@@ -90,13 +90,14 @@ export default function MyWork() {
         <section className="section">
             <h2 className="md:self-start h2">My Work</h2>
             <div className=" max-w-full">
-                <ul className="flex flex-col gap-6">
+                <ul className="flex flex-col gap-24">
                     <li>
                         <ProjectCard
                             vidSrc="/videos/queue-social.webm"
                             name="QueueSocial"
                             desc={descriptions.queueSocial}
                             items={queueSocialItems}
+                            role="Software Engineer / Founder"
                         />
                     </li>
                     <li>
@@ -105,6 +106,7 @@ export default function MyWork() {
                             name="AlgoDuels"
                             desc={descriptions.algoDuels}
                             items={algoDuelsItems}
+                            role="Full Stack Developer"
                         />
                     </li>
                     <li>
@@ -113,6 +115,7 @@ export default function MyWork() {
                             name="EldenForge"
                             desc={descriptions.eldenForge}
                             items={eldenForgeItems}
+                            role="Creator"
                         />
                     </li>
                     {/* <li> */}

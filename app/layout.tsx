@@ -31,7 +31,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${inter.className} antialiased flex flex-col justify-center items-center bg-background text-foreground`}
+                className={`${inter.className} antialiased w-screen overflow-x-hidden flex flex-col justify-center items-center bg-background text-foreground`}
             >
                 {children}
             </body>

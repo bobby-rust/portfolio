@@ -4,14 +4,48 @@ import Navbar from "./components/navbar/navbar";
 import HowICanHelp from "./components/services/how-i-can-help";
 // import Projects from "./components/projects/projects";
 import MyWork from "./components/my-work/my-work";
+import Image from "next/image";
 
 export default function Home() {
     return (
         <div className="w-full flex flex-col justify-center items-center">
             <Navbar />
             <main className="w-full flex flex-col gap-48 justify-center items-center lg:p-20">
-                <Hero />
-                <HowICanHelp />
+                <div className="flex justify-center items-center w-3/4 relative">
+                    <Image
+                        src="/blob1.svg"
+                        alt="blob 1"
+                        width={100}
+                        height={100}
+                        className="absolute top-0 left-0"
+                    />
+                    <Image
+                        src="/blob2.svg"
+                        alt="blob 1"
+                        width={100}
+                        height={100}
+                        className="absolute top-0 right-0"
+                    />
+                    <Image
+                        src="/blob3.svg"
+                        alt="blob 1"
+                        width={100}
+                        height={100}
+                        className="absolute bottom-0 right-0"
+                    />
+                    <Image
+                        src="/blob4.svg"
+                        alt="blob 1"
+                        width={100}
+                        height={100}
+                        className="absolute bottom-0 left-0"
+                    />
+
+                    <Hero />
+                </div>
+                <div className="bg-multi-wave bg-cover w-screen flex justify-center items-center">
+                    <HowICanHelp />
+                </div>
                 <MyWork />
                 {/* <FeaturesGrid /> */}
                 {/* <Projects /> */}

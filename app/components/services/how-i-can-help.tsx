@@ -8,7 +8,7 @@ export default function HowICanHelp() {
             <div>
                 <h2 className="h2">Here&apos;s what I can do for you</h2>
                 <div className="flex flex-col justify-center">
-                    <ul className="flex flex-col md:flex-row gap-12">
+                    <ul className="flex flex-col xl:flex-row gap-12">
                         <li>
                             <ServicesCard
                                 heading="Attract clients in your sleep"

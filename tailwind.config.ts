@@ -31,6 +31,10 @@ const config = {
             },
         },
         extend: {
+            backgroundImage: {
+                wave: "url('/wave.svg')",
+                "multi-wave": "url('/multi-wave.svg')",
+            },
             screens: {
                 xs: "320px",
                 sm: "450px",
