@@ -123,11 +123,11 @@ const EldenForgeDescriptionSkeleton = () => (
             </li>
             <li>
                 <h2 className="font-semibold text-xl">Testimonials</h2>
-                <InfiniteMovingCards
-                    items={eldenForgeTestimonials}
-                    direction="left"
-                    speed="slow"
-                />
+                {/* <InfiniteMovingCards */}
+                {/*     items={eldenForgeTestimonials} */}
+                {/*     direction="left" */}
+                {/*     speed="slow" */}
+                {/* /> */}
             </li>
         </ul>
     </div>
