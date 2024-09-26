@@ -1,6 +1,6 @@
 import React from "react";
 import { useId } from "react";
-import FeaturesHeader from "./FeaturesHeader";
+import FeaturesHeader from "./features-header";
 
 export default function FeaturesGrid() {
     return (
@@ -9,8 +9,9 @@ export default function FeaturesGrid() {
                 <div className="w-full flex flex-col gap-2">
                     <FeaturesHeader />
                     <p className="text-lg leading-relaxed tracking-wide text-neutral-600">
-                        I&#39;m a full-stack developer who specializes in building beautiful,
-                        performant, and scalable web applications.
+                        I&#39;m a full-stack developer who specializes in
+                        building beautiful, performant, and scalable web
+                        applications.
                     </p>
                 </div>
             </div>
@@ -76,7 +77,13 @@ const grid = [
     },
 ];
 
-export const Grid = ({ pattern, size }: { pattern?: number[][]; size?: number }) => {
+export const Grid = ({
+    pattern,
+    size,
+}: {
+    pattern?: number[][];
+    size?: number;
+}) => {
     const p = pattern ?? [
         [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
         [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
@@ -117,7 +124,12 @@ export function GridPattern({ width, height, x, y, squares, ...props }: any) {
                     <path d={`M.5 ${height}V.5H${width}`} fill="none" />
                 </pattern>
             </defs>
-            <rect width="100%" height="100%" strokeWidth={0} fill={`url(#${patternId})`} />
+            <rect
+                width="100%"
+                height="100%"
+                strokeWidth={0}
+                fill={`url(#${patternId})`}
+            />
             {squares && (
                 <svg x={x} y={y} className="overflow-visible">
                     {squares.map(([x, y]: any) => (
