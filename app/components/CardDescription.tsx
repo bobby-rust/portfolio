@@ -1,6 +1,6 @@
 // import { FlipWords } from "@/components/ui/flip-words";
 import React from "react";
-import Typewriter from "@/app/components/Typewriter";
+import Typewriter from "@/app/components/typewriter";
 
 export default function CardDescription() {
     const words = ["Software Engineer", "Full Stack Developer", "Web Developer", "Problem Solver"];
