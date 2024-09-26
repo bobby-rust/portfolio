@@ -3,7 +3,7 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import Image from "next/image";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+// import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export function ProjectGrid() {
     return (
@@ -43,39 +43,39 @@ const QueueSocialSkeleton = () => (
     ></video>
 );
 
-const eldenForgeTestimonials = [
-    {
-        quote: "[Gifted $2]: Well done sir.",
-        title: "ITMagee",
-        name: "",
-    },
-    {
-        quote: "This is really killer. I used it for my character to head into the expansion with. After so many playthroughs you just want to try something new and fun.",
-        title: "DreBuchanan",
-        name: "",
-    },
-    {
-        quote: "Damn, i love it!",
-        title: "ThesePhoto3592",
-        name: "",
-    },
-    {
-        quote: "I just came across this, thank you so much for making this!! I've been looking for something like this! You are a freaking Chad!!!!! 👍👍💪💪",
-        title: "Beguiler13",
-        name: "",
-    },
-    {
-        quote: "Thank you for this I’m obsessed!...I’ve just seen the updated ui and it looks great! I did notice that there’s no longer an option to include previously rolled items and I was wondering if you could bring that back?",
-        name: "",
-        title: "Overall_Character_41",
-    },
-    {
-        quote: "thank yoU!!",
-        name: "",
-        title: "Firm_Caterpillar9890",
-    },
-];
-
+// const eldenForgeTestimonials = [
+//     {
+//         quote: "[Gifted $2]: Well done sir.",
+//         title: "ITMagee",
+//         name: "",
+//     },
+//     {
+//         quote: "This is really killer. I used it for my character to head into the expansion with. After so many playthroughs you just want to try something new and fun.",
+//         title: "DreBuchanan",
+//         name: "",
+//     },
+//     {
+//         quote: "Damn, i love it!",
+//         title: "ThesePhoto3592",
+//         name: "",
+//     },
+//     {
+//         quote: "I just came across this, thank you so much for making this!! I've been looking for something like this! You are a freaking Chad!!!!! 👍👍💪💪",
+//         title: "Beguiler13",
+//         name: "",
+//     },
+//     {
+//         quote: "Thank you for this I’m obsessed!...I’ve just seen the updated ui and it looks great! I did notice that there’s no longer an option to include previously rolled items and I was wondering if you could bring that back?",
+//         name: "",
+//         title: "Overall_Character_41",
+//     },
+//     {
+//         quote: "thank yoU!!",
+//         name: "",
+//         title: "Firm_Caterpillar9890",
+//     },
+// ];
+//
 const EldenForgeDescriptionSkeleton = () => (
     <div className="h-full">
         <ul className="flex flex-col h-full gap-8 relative">
@@ -133,33 +133,33 @@ const EldenForgeDescriptionSkeleton = () => (
     </div>
 );
 
-const queueSocialTestimonials = [
-    {
-        quote: "QueueSocial has revolutionized the way I manage my social media accounts. Scheduling posts in advance has saved me hours each week!",
-        name: "Emily R.",
-        title: "",
-    },
-    {
-        quote: "As a social media manager, QueueSocial has become an essential tool. It’s simple to use and ensures my content is always posted at the right time.",
-        name: "David L.",
-        title: "",
-    },
-    {
-        quote: "QueueSocial’s intuitive interface and reliable scheduling have boosted my online presence. I couldn’t be happier with the results.",
-        name: "Sarah M.",
-        title: "",
-    },
-    {
-        quote: "I love how easy it is to schedule and manage all my posts in one place with QueueSocial. It's a real time-saver!",
-        name: "Jason B.",
-        title: "",
-    },
-    {
-        quote: "QueueSocial has been a game-changer for my business. My social media is now always active and engaging, without needing constant attention.",
-        name: "Rebecca P.",
-        title: "",
-    },
-];
+// const queueSocialTestimonials = [
+//     {
+//         quote: "QueueSocial has revolutionized the way I manage my social media accounts. Scheduling posts in advance has saved me hours each week!",
+//         name: "Emily R.",
+//         title: "",
+//     },
+//     {
+//         quote: "As a social media manager, QueueSocial has become an essential tool. It’s simple to use and ensures my content is always posted at the right time.",
+//         name: "David L.",
+//         title: "",
+//     },
+//     {
+//         quote: "QueueSocial’s intuitive interface and reliable scheduling have boosted my online presence. I couldn’t be happier with the results.",
+//         name: "Sarah M.",
+//         title: "",
+//     },
+//     {
+//         quote: "I love how easy it is to schedule and manage all my posts in one place with QueueSocial. It's a real time-saver!",
+//         name: "Jason B.",
+//         title: "",
+//     },
+//     {
+//         quote: "QueueSocial has been a game-changer for my business. My social media is now always active and engaging, without needing constant attention.",
+//         name: "Rebecca P.",
+//         title: "",
+//     },
+// ];
 
 const QueueSocialDescriptionSkeleton = () => (
     <div className="h-full">
@@ -225,11 +225,11 @@ const QueueSocialDescriptionSkeleton = () => (
             </li>
             <li>
                 <h2 className="font-semibold text-xl">Testimonials</h2>
-                <InfiniteMovingCards
-                    items={queueSocialTestimonials}
-                    direction="right"
-                    speed="slow"
-                />
+                {/* <InfiniteMovingCards */}
+                {/*     items={queueSocialTestimonials} */}
+                {/*     direction="right" */}
+                {/*     speed="slow" */}
+                {/* /> */}
             </li>
         </ul>
     </div>
