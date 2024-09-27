@@ -17,28 +17,28 @@ export default function Home() {
                         alt="blob 1"
                         width={100}
                         height={100}
-                        className="absolute top-0 left-0"
+                        className="absolute top-0 left-[-10%] z-0"
                     />
                     <Image
                         src="/blob2.svg"
                         alt="blob 1"
                         width={100}
                         height={100}
-                        className="absolute top-0 right-0"
+                        className="absolute top-0 right-0 z-0"
                     />
                     <Image
                         src="/blob3.svg"
                         alt="blob 1"
                         width={100}
                         height={100}
-                        className="absolute bottom-0 right-0"
+                        className="absolute bottom-0 right-0 z-0"
                     />
                     <Image
                         src="/blob4.svg"
                         alt="blob 1"
                         width={100}
                         height={100}
-                        className="absolute bottom-0 left-0"
+                        className="absolute bottom-0 left-0 z-0"
                     />
 
                     <Hero />
