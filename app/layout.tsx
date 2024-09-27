@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import AOSInit from "@/app/components/aos-init";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <AOSInit />
             <body
                 className={`${inter.className} antialiased w-screen overflow-x-hidden flex flex-col justify-center items-center bg-background text-foreground`}
             >

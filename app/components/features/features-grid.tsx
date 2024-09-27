@@ -4,7 +4,7 @@ import FeaturesHeader from "./features-header";
 
 export default function FeaturesGrid() {
     return (
-        <section className="section">
+        <section data-aos="fade-up" className="section">
             <div>
                 <div className="">
                     <div className="w-full flex flex-col gap-2">

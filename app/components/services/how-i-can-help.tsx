@@ -4,7 +4,7 @@ import { Hourglass, Globe, Magnet } from "lucide-react";
 
 export default function HowICanHelp() {
     return (
-        <section className="section">
+        <section data-aos="fade-up" className="section mt-20">
             <div>
                 <h2 className="h2">Here&apos;s what I can do for you</h2>
                 <div className="flex flex-col justify-center">

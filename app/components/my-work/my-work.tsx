@@ -87,7 +87,7 @@ const descriptions = {
 };
 export default function MyWork() {
     return (
-        <section className="section">
+        <section data-aos="fade-up" className="section">
             <h2 className="md:self-start h2">My Work</h2>
             <div className=" max-w-full">
                 <ul className="flex flex-col gap-24">
