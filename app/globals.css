@@ -29,8 +29,8 @@
         flex-direction: column; /* flex-col */
         justify-content: center; /* justify-center */
         align-items: center; /* items-center */
-        padding-left: 2.5rem; /* px-10 */
-        padding-right: 2.5rem; /* px-10 */
+        /* padding-left: 2.5rem; /* px-10 */
+        /* padding-right: 2.5rem; /* px-10 */
         padding-top: 5rem;
         padding-bottom: 5rem;
         box-sizing: border-box;

@@ -43,7 +43,7 @@ export default function Home() {
 
                     <Hero />
                 </div>
-                <div className="bg-multi-wave bg-cover w-screen flex justify-center items-center">
+                <div className="bg-multi-wave bg-cover flex justify-center items-center w-screen">
                     <HowICanHelp />
                 </div>
                 <MyWork />

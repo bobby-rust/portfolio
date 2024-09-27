@@ -21,8 +21,8 @@ export default function ProjectCard({
     role,
 }: ProjectCardProps) {
     return (
-        <div className="flex w-full bg-white p-5 border-2 border-gray rounded-lg shadow-xl sm:max-w-md md:max-w-full">
-            <div className="flex flex-col gap-4 w-1/2">
+        <div className="flex flex-col md:flex-row w-full bg-white p-5 border-2 border-gray rounded-lg shadow-xl sm:max-w-md md:max-w-full">
+            <div className="flex flex-col gap-4 md:w-1/2">
                 <div className="">
                     <h3 className="font-semibold md:text-xl">{name}</h3>
                     <p className="text-secondary-foreground tracking-wide leading-relaxed">
@@ -39,6 +39,7 @@ export default function ProjectCard({
                 </div>
             </div>
             <div className="flex flex-col gap-4">
+                <h3 className="font-semibold md:text-xl self-start">Preview</h3>
                 <video
                     autoPlay
                     loop

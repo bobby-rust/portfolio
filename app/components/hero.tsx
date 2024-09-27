@@ -14,8 +14,8 @@ export default function Hero() {
     ];
 
     return (
-        <div className="z-10 w-full flex flex-col gap-4 p-5 justify-center items-center 4xl:max-w-[60vw] max-w-screen">
-            <div className="flex p-5 2xl:px-32 md:py-20 3xl:w-[70vw] 4xl:max-w-full">
+        <div className="z-10 w-full flex flex-col gap-4 justify-center items-center 4xl:max-w-[60vw] max-w-screen">
+            <div className="flex pt-10 2xl:px-32 md:py-20 3xl:w-[70vw] 4xl:max-w-full max-w-full">
                 {/* <h1 className="relative font-bold text-xl text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl tracking-tighter"> */}
                 {/* 👋 Hey, I&#39;m Rob Rust */}
                 {/*     <span>Modernize Your Business.</span> */}
@@ -61,7 +61,7 @@ export default function Hero() {
                         <div className="flex flex-col self-start w-full">
                             <div className="flex flex-col gap-4">
                                 <div className="flex flex-col md:flex-row gap-4 w-full justify-center items-center md:justify-start">
-                                    <div className="flex gap-2 md:flex-row w-72">
+                                    <div className="flex gap-2 sm:min-w-60 md:flex-row">
                                         <button className="inline-flex w-full text-xs lg:text-sm h-12 animate-shimmer items-center hover:shadow-lg justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,var(--foreground),55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                                             Hire me
                                         </button>
