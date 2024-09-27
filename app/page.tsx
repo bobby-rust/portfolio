@@ -1,5 +1,5 @@
 import Hero from "./components/hero";
-// import FeaturesGrid from "./components/features/FeaturesGrid";
+import FeaturesGrid from "./components/features/features-grid";
 import Navbar from "./components/navbar/navbar";
 import HowICanHelp from "./components/services/how-i-can-help";
 // import Projects from "./components/projects/projects";
@@ -47,7 +47,7 @@ export default function Home() {
                     <HowICanHelp />
                 </div>
                 <MyWork />
-                {/* <FeaturesGrid /> */}
+                <FeaturesGrid />
                 {/* <Projects /> */}
 
                 {/* - I have an associate's degree in computer science and in my senior year of completing my bachelor's of science in computer

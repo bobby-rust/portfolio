@@ -4,34 +4,36 @@ import FeaturesHeader from "./features-header";
 
 export default function FeaturesGrid() {
     return (
-        <div id="services" className="flex flex-col gap-6 py-20 lg:py-40 px-16">
-            <div className="">
-                <div className="w-full flex flex-col gap-2">
-                    <FeaturesHeader />
-                    <p className="text-lg leading-relaxed tracking-wide text-neutral-600">
-                        I&#39;m a full-stack developer who specializes in
-                        building beautiful, performant, and scalable web
-                        applications.
-                    </p>
-                </div>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
-                {grid.map((feature) => (
-                    <div
-                        key={feature.title}
-                        className="relative bg-gradient-to-b dark:from-neutral-900 from-neutral-100 dark:to-neutral-950 to-white p-6 rounded-3xl overflow-hidden"
-                    >
-                        <Grid size={20} />
-                        <p className="text-base font-bold text-neutral-800 dark:text-white relative z-20">
-                            {feature.title}
-                        </p>
-                        <p className="text-neutral-600 dark:text-neutral-400 mt-4 text-base font-normal relative z-20">
-                            {feature.description}
+        <section className="section">
+            <div>
+                <div className="">
+                    <div className="w-full flex flex-col gap-2">
+                        <FeaturesHeader />
+                        <p className="text-lg leading-relaxed tracking-wide text-neutral-600">
+                            I&#39;m a full-stack developer who specializes in
+                            building beautiful, performant, and scalable web
+                            applications.
                         </p>
                     </div>
-                ))}
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
+                    {grid.map((feature) => (
+                        <div
+                            key={feature.title}
+                            className="relative bg-gradient-to-b dark:from-neutral-900 from-neutral-100 dark:to-neutral-950 to-white p-6 rounded-3xl overflow-hidden"
+                        >
+                            <Grid size={20} />
+                            <p className="text-base font-bold text-neutral-800 dark:text-white relative z-20">
+                                {feature.title}
+                            </p>
+                            <p className="text-neutral-600 dark:text-neutral-400 mt-4 text-base font-normal relative z-20">
+                                {feature.description}
+                            </p>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
     );
 }
 const grid = [
