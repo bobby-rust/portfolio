@@ -16,7 +16,7 @@ export default function Hero() {
     return (
         <div
             data-aos="fade-up"
-            className="z-10 w-full flex flex-col gap-4 justify-center items-center 4xl:max-w-[60vw] max-w-screen"
+            className="z-10 w-full flex flex-col gap-4 justify-center items-center 4xl:max-w-[60vw] max-w-screen pt-20"
         >
             <div className="flex pt-10 2xl:px-32 md:py-20 3xl:w-[70vw] 4xl:max-w-full max-w-full">
                 {/* <h1 className="relative font-bold text-xl text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl tracking-tighter"> */}
