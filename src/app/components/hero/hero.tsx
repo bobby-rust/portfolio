@@ -2,7 +2,6 @@ import React from "react";
 import Headshot from "./headshot";
 import Typewriter from "./typewriter";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Hero() {
     const words = [
