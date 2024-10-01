@@ -26,7 +26,7 @@ export default function Hero() {
                     <div className="sm:text-2xl">
                         I&apos;m a<Typewriter words={words} />
                     </div>
-                    <p className="text-gray text-sm lg:text-base text-center lg:text-start">
+                    <p className="text-gray-600 text-sm lg:text-base text-center lg:text-start">
                         I help local businesses thrive online with{" "}
                         <b>custom websites</b> & <b>reliable tech support</b> in
                         Potsdam, New York.

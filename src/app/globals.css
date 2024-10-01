@@ -5,7 +5,6 @@
 :root {
     --background: #fafbf6;
     --foreground: #333;
-    --gray: #777;
     --primary: #004c4c;
     --secondary-light: #966;
     --secondary-dark: #6b4747;
@@ -31,23 +30,47 @@ body {
     }
 }
 
+/* ------------------ HTML Element Styles ---------------------  */
+
+/* section */
 section {
-    height: 80vh;
     padding: 1.25rem;
-    width: 66.6667%;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 @media (width >=1024px) {
-    .custom-section {
-        width: 60%;
+    section {
+        min-height: 80vh;
+        width: 70%;
     }
 }
 
 @media (width >=1536px) {
-    .custom-section {
+    section {
         width: 50%;
     }
+}
+
+/* section h2 */
+section h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+@media (width >=1024px) {
+    section h2 {
+        text-align: left;
+    }
+}
+
+section h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
 }
