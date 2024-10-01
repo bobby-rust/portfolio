@@ -1,9 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    reactStrictMode: true,
-    images: {
-        domains: ["api.microlink.io"],
-    },
-};
+const nextConfig = {}
 
-export default nextConfig;
+export default nextConfig
