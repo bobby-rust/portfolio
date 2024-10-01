@@ -12,7 +12,7 @@ export default function Hero() {
         "Freelance Developer",
     ];
     return (
-        <section className="h-[80vh] p-5 xs:w-2/3 lg:w-3/5 2xl:w-1/2 flex items-center justify-center">
+        <section>
             <div className="flex items-center gap-12">
                 <div className="flex flex-col h-full items-center lg:items-start justify-center gap-4">
                     {" "}
@@ -26,9 +26,10 @@ export default function Hero() {
                     <div className="sm:text-2xl">
                         I&apos;m a<Typewriter words={words} />
                     </div>
-                    <p className="text-gray text-sm text-center lg:text-start">
-                        I help local businesses thrive online with custom
-                        websites & reliable tech support in Potsdam, New York.
+                    <p className="text-gray text-sm lg:text-base text-center lg:text-start">
+                        I help local businesses thrive online with{" "}
+                        <b>custom websites</b> & <b>reliable tech support</b> in
+                        Potsdam, New York.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Link

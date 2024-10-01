@@ -30,3 +30,24 @@ body {
         @apply scroll-smooth;
     }
 }
+
+section {
+    height: 80vh;
+    padding: 1.25rem;
+    width: 66.6667%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (width >=1024px) {
+    .custom-section {
+        width: 60%;
+    }
+}
+
+@media (width >=1536px) {
+    .custom-section {
+        width: 50%;
+    }
+}

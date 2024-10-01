@@ -34,6 +34,9 @@ const config: Config = {
             backgroundImage: {
                 "geometric-mesh": "url('/ccchaos.svg')",
                 burst: "url('/burst.svg')",
+                blurry: "url('/blurry.svg')",
+                blurry2: "url('/blurry2.svg')",
+                blurry3: "url('/blurry3.svg')",
             },
         },
     },
