@@ -29,7 +29,7 @@ export default function Navbar() {
                         <Link href="#services">Services</Link>
                     </li>
                     <li className="hover:cursor-pointer hover:underline">
-                        <Link href="#my-work">Projects</Link>
+                        <Link href="#projects">Projects</Link>
                     </li>
                     <li className="hover:cursor-pointer hover:underline">
                         <Link href="#pricing">Pricing</Link>
