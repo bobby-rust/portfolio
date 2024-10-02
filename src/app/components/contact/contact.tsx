@@ -31,12 +31,15 @@ export default function Contact() {
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         console.log(form);
-        const response = await fetch("/api/contact", {
+        // const response = await fetch("/api/contact", {
+        //     method: "POST",
+        //     body: JSON.stringify(form),
+        // });
+        await fetch("/api/contact", {
             method: "POST",
             body: JSON.stringify(form),
         });
-        const json = await response.json();
-        console.log(json);
+        // const json = await response.json();
     }
 
     return (

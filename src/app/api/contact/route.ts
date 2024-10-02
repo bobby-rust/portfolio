@@ -11,17 +11,14 @@ const mg: Interfaces.IMailgunClient = mailgun.client({
 export async function POST(request: Request) {
     const { name, email, subject, body } = await request.json();
 
-    mg.messages
+    const msg = await mg.messages
         .create("sandbox139c104952194a1eaffd7f73b412344c.mailgun.org", {
             from: "robrustdev@gmail.com",
             to: ["bobby.rust121@gmail.com"],
             subject: subject,
             text: body + "\nName: " + name + "\nEmail: " + email,
         })
-        .then((msg) => console.log(msg))
         .catch((err) => console.log(err));
 
-    return new Response(JSON.stringify({ message: "Message sent" }), {
-        status: 200,
-    });
+    return new Response(JSON.stringify({ data: msg }), { status: 200 });
 }
