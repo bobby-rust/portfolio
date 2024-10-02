@@ -46,7 +46,7 @@ export default function Contact() {
         <section id="contact" className="pt-48">
             <div className="w-full h-full flex flex-col items-center lg:items-start gap-4">
                 <h2>Contact</h2>
-                <p className="text-gray-600 text-lg">
+                <p className="text-gray-600 text-lg text-center lg:text-left">
                     Let&apos;s bring your project to life! Whether you need a
                     custom website, tech support, or have a unique challenge,
                     I&apos;m here to help. Drop me a message and let&apos;s
@@ -66,7 +66,7 @@ export default function Contact() {
                             onChange={handleFormChange}
                             className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
                         />
-                        {/* email */}
+                        {/* Email */}
                         <label
                             htmlFor="email"
                             className="font-semibold text-lg"
@@ -107,18 +107,20 @@ export default function Contact() {
                             onChange={handleFormChange}
                             className="border-2 border-gray-400 rounded-lg h-72 p-3 bg-slate-700 text-background"
                         />
-                        <div className="flex justify-between">
+
+                        {/* Submit */}
+                        <div className="flex flex-col sm:flex-row gap-2 items-center justify-center sm:justify-between">
                             <button
                                 type="submit"
-                                className=" flex gap-2 justify-center p-3 bg-secondary-dark rounded-lg text-background w-48 mt-2 border-2 border-gray-400 hover:shadow-md hover:bg-[rgba(107,71,71,0.9)]"
+                                className=" flex gap-2 justify-center p-3 bg-secondary-dark w-full sm:w-48 rounded-lg text-background mt-2 border-2 border-gray-400 hover:shadow-md hover:bg-[rgba(107,71,71,0.9)]"
                             >
-                                <div className="w-1/4 flex justify-center items-center">
+                                <div className="w-1/4 flex justify-end">
                                     <SendHorizontal />{" "}
                                 </div>
                                 <span className="w-1/2">Submit</span>{" "}
                                 <div className="w-1/4"></div>
                             </button>
-                            <button className="hover:underline mt-2 flex gap-2">
+                            <button className="hover:underline mt-2 w-full text-center border-2 border-gray-400 p-3 sm:border-none rounded-lg flex justify-center  sm:w-auto gap-2">
                                 <Mail /> Send me an email directly
                             </button>
                         </div>
