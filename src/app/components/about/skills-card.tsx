@@ -14,11 +14,14 @@ const SKILLS = [
     "Express",
     "MongoDB",
     "PostgreSQL",
+    "Shopify",
+    "Wordpress",
+    "WooCommerce",
 ];
 
 export default function SkillsCard() {
     return (
-        <div className="border-2 rounded-xl shadow-xl border-gray-400 p-5 xs:w-96">
+        <div className="border-2 rounded-xl shadow-xl border-gray-400 p-5 w-96 lg:w-1/2">
             <h3 className="flex items-center gap-2">
                 <Code size={30} /> Skills
             </h3>
@@ -35,11 +38,11 @@ export default function SkillsCard() {
                 <h3 className="flex items-center gap-2">
                     <Binary size={30} /> Technologies
                 </h3>
-                <p className="flex gap-2 flex-wrap">
+                <div className="flex gap-2 flex-wrap">
                     {SKILLS.map((skill, i) => {
                         return <Tag key={i} tag={skill} />;
                     })}
-                </p>
+                </div>
             </div>
         </div>
     );

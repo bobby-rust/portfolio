@@ -17,7 +17,7 @@ const COURSES = [
 
 export default function EducationCard() {
     return (
-        <div className="border-2 rounded-xl shadow-xl border-gray-400 p-5 xs:w-96">
+        <div className="border-2 rounded-xl shadow-xl border-gray-400 p-5 w-96 lg:w-1/2">
             <h3 className="flex items-center gap-2">
                 <GraduationCap size={30} /> Education
             </h3>
@@ -40,11 +40,11 @@ export default function EducationCard() {
                     </span>
                 </p>
                 <h4 className="font-semibold">Completed Courses</h4>
-                <p className="flex gap-2 flex-wrap">
+                <div className="flex gap-2 flex-wrap">
                     {COURSES.map((course, i) => {
                         return <Tag key={i} tag={course} />;
                     })}
-                </p>
+                </div>
             </div>
         </div>
     );
