@@ -19,6 +19,7 @@ const config: Config = {
                 "secondary-light": "var(--secondary-light)",
                 "secondary-dark": "var(--secondary-dark)",
                 accent: "var(--accent)",
+                teal: "var(--teal)",
             },
             keyframes: {
                 "fade-in-out": {
