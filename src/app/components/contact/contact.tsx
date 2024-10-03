@@ -54,6 +54,12 @@ export default function Contact() {
         }
 
         setDisableSubmit(false);
+        setForm({
+            name: "",
+            email: "",
+            subject: "",
+            body: "",
+        });
     }
 
     return (
