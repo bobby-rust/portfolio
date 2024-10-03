@@ -27,9 +27,19 @@ const config: Config = {
                     "50%": { opacity: "1" },
                     "100%": { opacity: "0" },
                 },
+                rise: {
+                    "0%": { transform: "translateY(100px)", opacity: "0" },
+                    "100%": { transform: "translateY(0)", opacity: "1" },
+                },
+                fall: {
+                    "0%": { transform: "translateY(0)", opacity: "1" },
+                    "100%": { transform: "translateY(100px)", opacity: "0" },
+                },
             },
             animation: {
                 "fade-in-out": "fade-in-out 0.8s linear infinite",
+                rise: "rise 0.2s ease-out forwards",
+                fall: "fall 0.2s ease-out forwards",
             },
             backgroundImage: {
                 "geometric-mesh": "url('/ccchaos.svg')",

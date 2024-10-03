@@ -18,7 +18,14 @@ export async function POST(request: Request) {
             subject: subject,
             text: body + "\nName: " + name + "\nEmail: " + email,
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+            console.log(err);
+            return err;
+        });
+
+    if (msg instanceof Error) {
+        return new Response(JSON.stringify({ data: msg }), { status: 500 });
+    }
 
     return new Response(JSON.stringify({ data: msg }), { status: 200 });
 }

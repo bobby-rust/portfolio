@@ -2,6 +2,7 @@
 
 import { useState, ChangeEvent } from "react";
 import { Mail, SendHorizontal } from "lucide-react";
+import { useToast } from "@/app/components/toast/toast-context";
 
 interface ContactForm {
     name: string;
@@ -11,13 +12,18 @@ interface ContactForm {
 }
 
 export default function Contact() {
+    const toast = useToast();
+
+    /* State */
     const [form, setForm] = useState<ContactForm>({
         name: "",
         email: "",
         subject: "",
         body: "",
     });
+    const [disableSubmit, setDisableSubmit] = useState(false);
 
+    /* Helper Fns */
     function handleFormChange(
         e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
     ) {
@@ -30,16 +36,24 @@ export default function Contact() {
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
+        setDisableSubmit(true);
         console.log(form);
-        // const response = await fetch("/api/contact", {
-        //     method: "POST",
-        //     body: JSON.stringify(form),
-        // });
-        await fetch("/api/contact", {
+        const response = await fetch("/api/contact", {
             method: "POST",
             body: JSON.stringify(form),
         });
-        // const json = await response.json();
+
+        if (response.status === 200) {
+            toast(
+                "Thank you!",
+                "Message sent successfully. I will get back to you as soon as possible.",
+                true,
+            );
+        } else {
+            toast("Something went wrong", "Please try again.", false);
+        }
+
+        setDisableSubmit(false);
     }
 
     return (
@@ -57,6 +71,9 @@ export default function Contact() {
                         {/* Name */}
                         <label htmlFor="name" className="font-semibold text-lg">
                             Name
+                            <p className="font-normal text-base text-gray-600">
+                                What can I call you?
+                            </p>
                         </label>
                         <input
                             name="name"
@@ -72,6 +89,9 @@ export default function Contact() {
                             className="font-semibold text-lg"
                         >
                             Email
+                            <p className="font-normal text-base text-gray-600">
+                                Where can I get back to you?
+                            </p>
                         </label>
                         <input
                             name="email"
@@ -81,12 +101,16 @@ export default function Contact() {
                             onChange={handleFormChange}
                             className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
                         />
+
                         {/* Subject */}
                         <label
                             htmlFor="subject"
                             className="font-semibold text-lg"
                         >
                             Subject
+                            <p className="font-normal text-base text-gray-600">
+                                What&apos;s this about?
+                            </p>
                         </label>
                         <input
                             name="subject"
@@ -99,6 +123,9 @@ export default function Contact() {
                         {/* Body */}
                         <label htmlFor="body" className="font-semibold text-lg">
                             Message
+                            <p className="font-normal text-base text-gray-600">
+                                What can I help you with?
+                            </p>
                         </label>
                         <textarea
                             name="body"
@@ -112,6 +139,7 @@ export default function Contact() {
                         <div className="flex flex-col sm:flex-row gap-2 items-center justify-center sm:justify-between">
                             <button
                                 type="submit"
+                                disabled={disableSubmit}
                                 className=" flex gap-2 justify-center p-3 bg-secondary-dark w-full sm:w-48 rounded-lg text-background mt-2 border-2 border-gray-400 hover:shadow-md hover:bg-[rgba(107,71,71,0.9)]"
                             >
                                 <div className="w-1/4 flex justify-end">
@@ -126,6 +154,19 @@ export default function Contact() {
                         </div>
                     </div>
                 </form>
+                {/********* TESTING TOAST BUTTON ***********/}
+                {/* <button */}
+                {/*     onClick={() => */}
+                {/*         toast( */}
+                {/*             "Something went wrong", */}
+                {/*             "Please try again.", */}
+                {/*             false, */}
+                {/*             100000, */}
+                {/*         ) */}
+                {/*     } */}
+                {/* > */}
+                {/*     toggle toast */}
+                {/* </button> */}
             </div>
         </section>
     );

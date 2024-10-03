@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/app/components/navbar/navbar";
+import { ToastProvider } from "@/app/components/toast/toast-context";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -18,8 +19,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${inter.className} antialiased`}>
-                <Navbar />
-                <main>{children}</main>
+                <ToastProvider>
+                    <Navbar />
+                    <main>{children}</main>
+                </ToastProvider>
             </body>
         </html>
     );

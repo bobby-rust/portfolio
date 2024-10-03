@@ -17,7 +17,7 @@ const COURSES = [
 
 export default function EducationCard() {
     return (
-        <div className="border-2 rounded-xl shadow-xl border-gray-400 p-5 w-96 lg:w-1/2">
+        <div className="border-2 rounded-xl shadow-xl border-gray-400 p-5 w-72 xs:w-96 lg:w-1/2">
             <h3 className="flex items-center gap-2">
                 <GraduationCap size={30} /> Education
             </h3>
