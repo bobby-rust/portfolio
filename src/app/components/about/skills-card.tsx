@@ -27,7 +27,7 @@ export default function SkillsCard() {
             </h3>
             <div className="p-2 flex flex-col gap-4">
                 <p className="">
-                    I&apos;m Rob Rust, a <b>full-stack developer</b> and{" "}
+                    I&apos;m a <b>full-stack developer</b> and{" "}
                     <b>software engineer</b> passionate about solving tech
                     challenges and building <b>custom websites.</b> With
                     expertise in React, Next.js,TypeScript, and more, I turn
