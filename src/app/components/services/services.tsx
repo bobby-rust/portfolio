@@ -5,11 +5,11 @@ export default function Services() {
         <section id="services" className="pt-48">
             <div className="w-full self-start flex flex-col items-center lg:items-start gap-4">
                 <h2>Services</h2>
-                <div className="flex justify-center items-stretch w-full h-[90%]">
+                <div className="flex flex-col md:flex-row justify-center items-stretch w-full h-[90%]">
                     {" "}
                     {/* Set the height of the parent to 90% */}
                     {/* First Service */}
-                    <div className="w-1/3 flex justify-center items-center">
+                    <div className="md:w-1/3 flex justify-center items-center">
                         <div className="p-5 flex flex-col gap-4">
                             <Laptop size={40} className="min-h-[40px]" />
                             <h4 className="font-semibold text-lg">
@@ -40,7 +40,7 @@ export default function Services() {
                     <div className="w-[1px] bg-gray-600 flex-grow"></div>{" "}
                     {/* Set height to 90% with flex-grow */}
                     {/* Second Service */}
-                    <div className="w-1/3 flex justify-center items-center">
+                    <div className="md:w-1/3 flex justify-center items-center">
                         <div className="p-5 flex flex-col gap-4">
                             <ChartNoAxesColumnIncreasing
                                 size={40}
@@ -72,7 +72,7 @@ export default function Services() {
                     <div className="w-[1px] bg-gray-600 flex-grow"></div>{" "}
                     {/* Set height to 90% with flex-grow */}
                     {/* Third Service */}
-                    <div className="w-1/3 flex justify-center items-center">
+                    <div className="md:w-1/3 flex justify-center items-center">
                         <div className="p-5 flex flex-col gap-4">
                             <Cloud size={40} className="min-h-[40px]" />
                             <h4 className="font-semibold text-lg">
