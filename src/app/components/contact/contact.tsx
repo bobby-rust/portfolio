@@ -3,6 +3,7 @@
 import { useState, ChangeEvent } from "react";
 import { Mail, SendHorizontal } from "lucide-react";
 import { useToast } from "@/app/components/toast/toast-context";
+import Link from "next/link";
 
 interface ContactForm {
     name: string;
@@ -82,7 +83,7 @@ export default function Contact() {
     }
 
     return (
-        <section id="contact" className="pt-48">
+        <section id="contact" className="pt-48 lg:px-36">
             <div className="w-full h-full flex flex-col items-center lg:items-start gap-4">
                 <h2>Contact</h2>
                 <p className="text-gray-600 text-lg text-center lg:text-left">
@@ -200,9 +201,12 @@ export default function Contact() {
                                 <span className="w-1/2">Submit</span>{" "}
                                 <div className="w-1/4"></div>
                             </button>
-                            <button className="hover:underline mt-2 w-full text-center border-2 border-gray-400 p-3 sm:border-none rounded-lg flex justify-center  sm:w-auto gap-2">
+                            <Link
+                                href="mailto:bobby.rust121@gmail.com"
+                                className="hover:underline mt-2 w-full text-center border-2 border-gray-400 p-3 sm:border-none rounded-lg flex justify-center  sm:w-auto gap-2"
+                            >
                                 <Mail /> Send me an email directly
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </form>
