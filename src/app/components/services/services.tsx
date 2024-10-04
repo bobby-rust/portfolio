@@ -37,7 +37,7 @@ export default function Services() {
                         </div>
                     </div>
                     {/* First Divider */}
-                    <div className="w-[1px] bg-gray-600 flex-grow"></div>{" "}
+                    <div className="h-[1px] md:h-auto md:w-[1px] bg-gray-600 flex-grow"></div>{" "}
                     {/* Set height to 90% with flex-grow */}
                     {/* Second Service */}
                     <div className="md:w-1/3 flex justify-center items-center">
@@ -69,7 +69,7 @@ export default function Services() {
                         </div>
                     </div>
                     {/* Second Divider */}
-                    <div className="w-[1px] bg-gray-600 flex-grow"></div>{" "}
+                    <div className="h-[1px] md:w-[1px] md:h-auto bg-gray-600 flex-grow"></div>{" "}
                     {/* Set height to 90% with flex-grow */}
                     {/* Third Service */}
                     <div className="md:w-1/3 flex justify-center items-center">
