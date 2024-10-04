@@ -35,9 +35,28 @@ export default function Contact() {
     }
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+        // TODO: Input validation
         e.preventDefault();
+
+        if (form.name.trim() === "") {
+            alert("Please enter a name");
+            return;
+        }
+        if (form.subject.trim() === "") {
+            alert("Please enter a subject");
+            return;
+        }
+        if (form.body.trim() === "") {
+            alert("Please enter a body");
+            return;
+        }
+        if (form.email.trim() === "") {
+            alert("Please enter an email");
+            return;
+        }
+
         setDisableSubmit(true);
-        console.log(form);
+
         const response = await fetch("/api/contact", {
             method: "POST",
             body: JSON.stringify(form),
