@@ -17,22 +17,46 @@ export default function Services() {
                             </h4>
                             <p className="text-gray-600">
                                 At BlackCatsWebDev, we specialize in creating{" "}
-                                <b>high-performance</b>, <b>custom websites</b>{" "}
-                                built with the <b>latest technologies</b> like{" "}
-                                <b>React</b> and <b>Next.js</b>. Whether
-                                you&apos;re looking for a stunning design or
-                                seamless functionality, our websites are
-                                tailored to meet your{" "}
-                                <b>unique business needs</b>. We prioritize{" "}
-                                <b>speed</b>, <b>performance</b>, and{" "}
-                                <b>SEO optimization</b> to ensure your site
-                                ranks high in search engine results, delivering
-                                a <b>fast</b> and <b>engaging</b> user
+                                <b className="text-foreground">
+                                    high-performance
+                                </b>
+                                ,{" "}
+                                <b className="text-foreground">
+                                    custom websites
+                                </b>{" "}
+                                built with the{" "}
+                                <b className="text-foreground">
+                                    latest technologies
+                                </b>{" "}
+                                like <b className="text-foreground">React</b>{" "}
+                                and <b className="text-foreground">Next.js</b>.
+                                Whether you&apos;re looking for a stunning
+                                design or seamless functionality, our websites
+                                are tailored to meet your{" "}
+                                <b className="text-foreground">
+                                    unique business needs
+                                </b>
+                                . We prioritize{" "}
+                                <b className="text-foreground">speed</b>,{" "}
+                                <b className="text-foreground">performance</b>,
+                                and{" "}
+                                <b className="text-foreground">
+                                    SEO optimization
+                                </b>{" "}
+                                to ensure your site ranks high in search engine
+                                results, delivering a{" "}
+                                <b className="text-foreground">fast</b> and{" "}
+                                <b className="text-foreground">engaging</b> user
                                 experience. By integrating{" "}
-                                <b>cutting-edge tools</b> and{" "}
-                                <b>responsive design</b>, we create websites
-                                that not only look great but are also optimized
-                                for every device.
+                                <b className="text-foreground">
+                                    cutting-edge tools
+                                </b>{" "}
+                                and{" "}
+                                <b className="text-foreground">
+                                    responsive design
+                                </b>
+                                , we create websites that not only look great
+                                but are also optimized for every device.
                             </p>
                         </div>
                     </div>
