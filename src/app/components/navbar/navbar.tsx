@@ -28,12 +28,12 @@ export default function Navbar() {
                     <li className="hover:cursor-pointer hover:underline">
                         <Link href="#services">Services</Link>
                     </li>
-                    <li className="hover:cursor-pointer hover:underline">
-                        <Link href="#projects">Projects</Link>
-                    </li>
-                    <li className="hover:cursor-pointer hover:underline">
-                        <Link href="#pricing">Pricing</Link>
-                    </li>
+                    {/* <li className="hover:cursor-pointer hover:underline"> */}
+                    {/*     <Link href="#projects">Projects</Link> */}
+                    {/* </li> */}
+                    {/* <li className="hover:cursor-pointer hover:underline"> */}
+                    {/*     <Link href="#pricing">Pricing</Link> */}
+                    {/* </li> */}
                     <li className="hover:cursor-pointer hover:underline">
                         <Link href="#contact">Contact</Link>
                     </li>
