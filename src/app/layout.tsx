@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/app/components/navbar/navbar";
 import { ToastProvider } from "@/app/components/toast/toast-context";
+import Footer from "./components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -26,6 +27,9 @@ export default function RootLayout({
                     <main>{children}</main>
                 </ToastProvider>
             </body>
+            <footer>
+                <Footer />
+            </footer>
         </html>
     );
 }
