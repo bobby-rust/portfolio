@@ -8,7 +8,9 @@ export default function Home() {
     return (
         <div className="flex flex-col justify-center items-center">
             <Hero />
-            <About />
+            <div className="flex justify-center items-center w-full bg-gray-200">
+                <About />
+            </div>
             <Contact />
             <Services />
         </div>
