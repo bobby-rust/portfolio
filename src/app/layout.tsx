@@ -25,11 +25,11 @@ export default function RootLayout({
                 <ToastProvider>
                     <Navbar />
                     <main>{children}</main>
+                    <footer>
+                        <Footer />
+                    </footer>
                 </ToastProvider>
             </body>
-            <footer>
-                <Footer />
-            </footer>
         </html>
     );
 }
