@@ -22,6 +22,9 @@ const config: Config = {
                 accent: "var(--accent)",
                 teal: "var(--teal)",
             },
+            boxShadow: {
+                even: "0px 0px 0px 0px rgba(0, 0, 0, 0.5)",
+            },
             keyframes: {
                 "fade-in-out": {
                     "0%": { opacity: "0" },

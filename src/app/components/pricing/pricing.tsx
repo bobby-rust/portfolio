@@ -42,7 +42,7 @@ export default function Pricing() {
     };
 
     const customStandardPlan = {
-        name: "Custom Standard Plan",
+        name: "Custom Plan",
         description:
             "Ideal for businesses needing a custom-built website with advanced features, external API integrations, and scalability.",
         price: "4000+",
@@ -62,7 +62,7 @@ export default function Pricing() {
     };
     return (
         <section>
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col gap-4">
                 <h2 className="lg++:text-left text-center">Pricing</h2>
                 <div className="flex flex-col lg++:flex-row gap-4">
                     <PricingCard
@@ -73,6 +73,7 @@ export default function Pricing() {
                         features={basicTemplatePlan.features}
                         platforms={basicTemplatePlan.platforms}
                     />
+                    {/* <div className="lg++:translate-y-[-20px] lg++:scale-105"> */}
                     <PricingCard
                         name={standardTemplatePlan.name}
                         description={standardTemplatePlan.description}
@@ -81,6 +82,7 @@ export default function Pricing() {
                         features={standardTemplatePlan.features}
                         platforms={standardTemplatePlan.platforms}
                     />
+                    {/* </div> */}
                     <PricingCard
                         name={customStandardPlan.name}
                         description={customStandardPlan.description}
