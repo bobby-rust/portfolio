@@ -61,7 +61,7 @@ export default function Pricing() {
         platforms: ["Next.js", "React", "Custom RESTful APIs"],
     };
     return (
-        <section>
+        <section data-aos="fade-up">
             <div className="flex flex-col gap-4">
                 <h2 className="lg++:text-left text-center">Pricing</h2>
                 <div className="flex flex-col lg++:flex-row gap-4">

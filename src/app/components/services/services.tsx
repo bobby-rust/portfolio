@@ -2,7 +2,7 @@ import { Laptop, Cloud, ChartNoAxesColumnIncreasing } from "lucide-react";
 
 export default function Services() {
     return (
-        <section id="services" className="pt-48">
+        <section data-aos="fade-down" id="services" className="pt-48">
             <div className="w-full self-start flex flex-col items-center lg:items-start gap-4">
                 <h2>Services</h2>
                 <div className="flex flex-col md:flex-row justify-center items-stretch w-full h-[90%]">

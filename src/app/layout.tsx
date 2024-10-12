@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/app/components/navbar/navbar";
 import { ToastProvider } from "@/app/components/toast/toast-context";
 import Footer from "./components/footer/footer";
+import AOSInit from "@/app/components/aos/aos-init";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
             <body
                 className={`${inter.className} antialiased max-w-screen overflow-x-hidden`}
             >
+                <AOSInit />
                 <ToastProvider>
                     <Navbar />
                     <main>{children}</main>

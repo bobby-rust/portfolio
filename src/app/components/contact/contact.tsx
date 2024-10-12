@@ -93,7 +93,7 @@ export default function Contact() {
     }
 
     return (
-        <section id="contact" className="pt-48 lg:px-36">
+        <section data-aos="fade-right" id="contact" className="pt-48 lg:px-36">
             <div className="w-full h-full flex flex-col items-center lg:items-start gap-4">
                 <h2>Contact</h2>
                 <p className="text-gray-600 text-lg text-center lg:text-left">

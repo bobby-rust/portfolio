@@ -12,11 +12,10 @@ export default function Hero() {
         "Freelance Developer",
     ];
     return (
-        <section>
+        <section data-aos="fade-up" className="mb-20">
             <div className="flex items-center gap-12">
                 <div className="flex flex-col h-full items-center lg:items-start justify-center gap-4">
                     {" "}
-                    {/* Added h-full and justify-center */}
                     <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl 3xl:text-6xl tracking-tighter">
                         👋 Hey, I&apos;m Rob Rust
                     </h1>
