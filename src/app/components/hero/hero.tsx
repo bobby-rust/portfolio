@@ -6,6 +6,7 @@ import Link from "next/link";
 export default function Hero() {
     const words = [
         "Software Engineer",
+        "Lifetime Student",
         "Full Stack Developer",
         "Web Developer",
         "Problem Solver",
@@ -33,7 +34,7 @@ export default function Hero() {
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Link
                             href="#contact"
-                            className="p-4 w-48 sm:w-fit rounded-lg text-background bg-primary hover:shadow-lg hover:bg-[rgba(0,76,76,0.9)]  text-xs xl:text-base text-center"
+                            className="p-4 w-48 sm:w-fit m-auto rounded-lg text-background bg-primary border-foreground border-[1px] hover:shadow-lg hover:bg-[rgba(0,76,76,0.9)] text-xs xl:text-base text-center"
                         >
                             Let&apos;s Work Together
                         </Link>
