@@ -15,7 +15,7 @@ export default function Navbar() {
                         alt="black cat logo"
                         width={150}
                         height={150}
-                        className="absolute top-0 left-0 z-[-1]"
+                        className="absolute top-0 left-0 z-[-1] w-24 h-24 lg:w-36 lg:h-36"
                     />
                 </div>
                 <ul className="hidden md:flex border-[1px] border-gray-400 bg-black px-4 py-2 rounded-3xl text-[#fafbf6] gap-2 md:gap-8 xl:gap-12 text-xs xl:text-base">
