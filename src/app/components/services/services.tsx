@@ -2,12 +2,14 @@ import { Laptop, Cloud, ChartNoAxesColumnIncreasing } from "lucide-react";
 
 export default function Services() {
     return (
-        <section data-aos="fade-down" id="services" className="pt-48">
-            <div className="w-full self-start flex flex-col items-center lg:items-start gap-4">
+        <section
+            data-aos="fade-down"
+            id="services"
+            className="py-0 my-0 flex items-center justify-center"
+        >
+            <div className="w-full flex flex-col items-center lg:items-start gap-4">
                 <h2>Services</h2>
                 <div className="flex flex-col md:flex-row justify-center items-stretch w-full h-[90%]">
-                    {" "}
-                    {/* Set the height of the parent to 90% */}
                     {/* First Service */}
                     <div className="md:w-1/3 flex justify-center items-center">
                         <div className="p-5 flex flex-col gap-4">
@@ -15,54 +17,28 @@ export default function Services() {
                             <h4 className="font-semibold text-lg">
                                 Custom Website Design & Development
                             </h4>
-                            <p className="text-gray-600">
-                                I specialize in creating{" "}
-                                <b className="text-foreground">
-                                    high-performance
-                                </b>
-                                ,{" "}
-                                <b className="text-foreground">
-                                    custom websites
-                                </b>{" "}
-                                built with the{" "}
-                                <b className="text-foreground">
-                                    latest technologies
-                                </b>{" "}
-                                like <b className="text-foreground">React</b>{" "}
-                                and <b className="text-foreground">Next.js</b>.
-                                Whether you&apos;re looking for a stunning
-                                design or seamless functionality, my websites
-                                are tailored to meet your{" "}
-                                <b className="text-foreground">
-                                    unique business needs
-                                </b>
-                                . I prioritize{" "}
-                                <b className="text-foreground">speed</b>,{" "}
-                                <b className="text-foreground">performance</b>,
-                                and{" "}
-                                <b className="text-foreground">
-                                    SEO optimization
-                                </b>{" "}
-                                to ensure your site ranks high in search engine
-                                results, delivering a{" "}
-                                <b className="text-foreground">fast</b> and{" "}
-                                <b className="text-foreground">engaging</b> user
+                            <p>
+                                I specialize in creating <b>high-performance</b>
+                                , <b>custom websites</b> built with the{" "}
+                                <b>latest technologies</b> like <b>React</b> and{" "}
+                                <b>Next.js</b>. Whether you&apos;re looking for
+                                a stunning design or seamless functionality, my
+                                websites are tailored to meet your{" "}
+                                <b>unique business needs</b>. I prioritize{" "}
+                                <b>speed</b>, <b>performance</b>, and{" "}
+                                <b>SEO optimization</b> to ensure your site
+                                ranks high in search engine results, delivering
+                                a <b>fast</b> and <b>engaging</b> user
                                 experience. By integrating{" "}
-                                <b className="text-foreground">
-                                    cutting-edge tools
-                                </b>{" "}
-                                and{" "}
-                                <b className="text-foreground">
-                                    responsive design
-                                </b>
-                                , I create websites that not only look great but
-                                are also optimized for every device.
+                                <b>cutting-edge tools</b> and{" "}
+                                <b>responsive design</b>, I create websites that
+                                not only look great but are also optimized for
+                                every device.
                             </p>
                         </div>
                     </div>
                     {/* First Divider */}
-                    <div className="h-[1px] md:h-auto md:w-[1px] bg-gray-600 flex-grow"></div>{" "}
-                    {/* Set height to 90% with flex-grow */}
+                    <div className="h-[1px] md:h-auto md:w-[1px] bg-gray-600 flex-grow"></div>
                     {/* Second Service */}
                     <div className="md:w-1/3 flex justify-center items-center">
                         <div className="p-5 flex flex-col gap-4">
@@ -73,7 +49,7 @@ export default function Services() {
                             <h4 className="font-semibold text-lg">
                                 Full Project Lifecycle Management
                             </h4>
-                            <p className="text-gray-600">
+                            <p>
                                 From <b>concept to completion</b>, I manage the{" "}
                                 <b>entire lifecycle</b> of your project,
                                 ensuring a <b>smooth</b> and{" "}
@@ -93,8 +69,7 @@ export default function Services() {
                         </div>
                     </div>
                     {/* Second Divider */}
-                    <div className="h-[1px] md:w-[1px] md:h-auto bg-gray-600 flex-grow"></div>{" "}
-                    {/* Set height to 90% with flex-grow */}
+                    <div className="h-[1px] md:w-[1px] md:h-auto bg-gray-600 flex-grow"></div>
                     {/* Third Service */}
                     <div className="md:w-1/3 flex justify-center items-center">
                         <div className="p-5 flex flex-col gap-4">
@@ -102,7 +77,7 @@ export default function Services() {
                             <h4 className="font-semibold text-lg">
                                 Hosting, Maintenance, & Support
                             </h4>
-                            <p className="text-gray-600">
+                            <p>
                                 My commitment to your success doesn’t end at{" "}
                                 <b>launch</b>. I provide{" "}
                                 <b>comprehensive hosting solutions</b>,{" "}

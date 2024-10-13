@@ -25,7 +25,7 @@ export default function RootLayout({
             >
                 <AOSInit />
                 <ToastProvider>
-                    <Navbar />
+                    {/* <Navbar /> */}
                     <main>{children}</main>
                     <footer>
                         <Footer />

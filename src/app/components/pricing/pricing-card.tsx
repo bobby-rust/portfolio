@@ -1,5 +1,5 @@
 import React from "react";
-import { Check } from "lucide-react";
+import { CircleCheck } from "lucide-react";
 import Tag from "../about/tag";
 
 interface PricingCardProps {
@@ -43,7 +43,7 @@ export default function PricingCard({
                 {features.map((feature: string, i: number) => {
                     return (
                         <li key={i} className="flex leading-5 gap-1">
-                            <Check className="flex-shrink-0 text-primary" />
+                            <CircleCheck className="flex-shrink-0 text-primary" />
                             {feature}
                         </li>
                     );

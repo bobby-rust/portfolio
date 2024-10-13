@@ -104,62 +104,68 @@ export default function Contact() {
                 </p>
                 <form onSubmit={handleSubmit} className="w-full">
                     <div className="flex flex-col gap-2">
-                        <div className="flex flex-col lg:w-2/3 xl:w-1/2">
-                            {/* Name */}
-                            <label
-                                htmlFor="name"
-                                className="font-semibold text-lg"
-                            >
-                                Name
-                                <p className="font-normal text-base text-gray-600">
-                                    What can I call you?
-                                </p>
-                            </label>
-                            <input
-                                name="name"
-                                type="text"
-                                placeholder="Enter your name"
-                                value={form.name}
-                                onChange={handleFormChange}
-                                className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
-                            />
-                            {/* Email */}
-                            <label
-                                htmlFor="email"
-                                className="font-semibold text-lg"
-                            >
-                                Email
-                                <p className="font-normal text-base text-gray-600">
-                                    Where can I get back to you?
-                                </p>
-                            </label>
-                            <input
-                                name="email"
-                                type="email"
-                                placeholder="Enter your email"
-                                value={form.email}
-                                onChange={handleFormChange}
-                                className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
-                            />
+                        <div className="flex">
+                            <div className="flex flex-col lg:w-2/3 xl:w-1/2">
+                                {/* Name */}
+                                <label
+                                    htmlFor="name"
+                                    className="font-semibold text-lg"
+                                >
+                                    Name
+                                    <p className="font-normal text-base text-gray-600">
+                                        What can I call you?
+                                    </p>
+                                </label>
+                                <input
+                                    name="name"
+                                    type="text"
+                                    placeholder="Enter your name"
+                                    value={form.name}
+                                    onChange={handleFormChange}
+                                    className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
+                                />
+                                {/* Email */}
+                                <label
+                                    htmlFor="email"
+                                    className="font-semibold text-lg"
+                                >
+                                    Email
+                                    <p className="font-normal text-base text-gray-600">
+                                        Where can I get back to you?
+                                    </p>
+                                </label>
+                                <input
+                                    name="email"
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    value={form.email}
+                                    onChange={handleFormChange}
+                                    className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
+                                />
 
-                            {/* Subject */}
-                            <label
-                                htmlFor="subject"
-                                className="font-semibold text-lg"
-                            >
-                                Subject
-                                <p className="font-normal text-base text-gray-600">
-                                    What&apos;s this about?
-                                </p>
-                            </label>
-                            <input
-                                name="subject"
-                                type="text"
-                                placeholder="Enter a subject"
-                                value={form.subject}
-                                onChange={handleFormChange}
-                                className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
-                            />
+                                {/* Subject */}
+                                <label
+                                    htmlFor="subject"
+                                    className="font-semibold text-lg"
+                                >
+                                    Subject
+                                    <p className="font-normal text-base text-gray-600">
+                                        What&apos;s this about?
+                                    </p>
+                                </label>
+                                <input
+                                    name="subject"
+                                    type="text"
+                                    placeholder="Enter a subject"
+                                    value={form.subject}
+                                    onChange={handleFormChange}
+                                    className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
+                                />
+                            </div>
+                            <div className="hidden lg:flex text-primary text-xl font-semibold flex-col lg:w-2/3 xl:w-1/2 justify-center items-center text-center">
+                                {" "}
+                                You can email me at bobby.rust121@gmail.com
+                            </div>
                         </div>
                         {/* Body */}
                         <label htmlFor="body" className="font-semibold text-lg">

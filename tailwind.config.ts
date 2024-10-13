@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
     content: [
@@ -24,6 +25,15 @@ const config: Config = {
             },
             boxShadow: {
                 even: "0px 0px 0px 0px rgba(0, 0, 0, 0.5)",
+                "green-3d": "3px 3px 2px 2px rgba(0, 255, 0, 1)",
+                gradient:
+                    "0 4px 20px rgba(0, 0, 255, 1), 0 6px 50px rgba(255, 0, 0, 1), 0 60px 60px rgba(0, 255, 0, 1)",
+                "blue-gradient": "0 4px 20px rgba(0, 0, 255, 1)",
+            },
+            textShadow: {
+                sm: "0 1px 2px var(--tw-shadow-color)",
+                DEFAULT: "1 8px 16px var(--tw-shadow-color)",
+                lg: "0 8px 16px var(--tw-shadow-color)",
             },
             keyframes: {
                 "fade-in-out": {
@@ -51,9 +61,23 @@ const config: Config = {
                 blurry: "url('/blurry.svg')",
                 blurry2: "url('/blurry2.svg')",
                 blurry3: "url('/blurry3.svg')",
+                waves: "url('/orange-waves.svg')",
+                gradient:
+                    "linear-gradient(45deg, rgba(0, 76, 76, 0.7), rgba(255, 169, 63, 0.7))",
             },
         },
     },
-    plugins: [],
+    plugins: [
+        plugin(function({ matchUtilities, theme }) {
+            matchUtilities(
+                {
+                    "text-shadow": (value: string) => ({
+                        textShadow: value,
+                    }),
+                },
+                { values: theme("textShadow") },
+            );
+        }),
+    ],
 };
 export default config;
