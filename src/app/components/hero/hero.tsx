@@ -13,7 +13,7 @@ export default function Hero() {
         "Freelance Developer",
     ];
     return (
-        <section data-aos="fade-up" className="my-20">
+        <section data-aos="fade-up" className="my-5 lg:my-20">
             <div className="flex items-center gap-12">
                 <div className="flex flex-col h-full items-center lg:items-start justify-center gap-4">
                     <p className="text-xl font-semibold">Welcome to my site!</p>
@@ -26,10 +26,11 @@ export default function Hero() {
                             Rob Rust
                         </span>
                     </h1>
-                    <div className="lg:hidden">
+                    <div className="relative lg:hidden">
+                        <div className="absolute -inset-2 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-blue-500 via-teal-800 to-green-500 opacity-75 blur-md overflow-hidden"></div>
                         <Headshot />
                     </div>
-                    <div className="sm:text-2xl">
+                    <div className="sm:text-2xl pt-4">
                         I&apos;m a<Typewriter words={words} />
                     </div>
                     <p className="text-sm lg:text-base text-center lg:text-start">
