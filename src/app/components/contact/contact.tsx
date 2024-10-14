@@ -162,9 +162,12 @@ export default function Contact() {
                                     className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
                                 />
                             </div>
-                            <div className="hidden lg:flex text-primary text-xl font-semibold flex-col lg:w-2/3 xl:w-1/2 justify-center items-center text-center">
-                                {" "}
-                                You can email me at bobby.rust121@gmail.com
+                            <div className="hidden lg:flex flex-col text-xl font-semibold lg:w-2/3 xl:w-1/2 justify-center text-center">
+                                <div>
+                                    {" "}
+                                    <Mail className="inline" />
+                                    You can email me at bobby.rust121@gmail.com
+                                </div>
                             </div>
                         </div>
                         {/* Body */}

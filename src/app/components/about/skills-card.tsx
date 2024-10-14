@@ -21,7 +21,7 @@ const SKILLS = [
 
 export default function SkillsCard() {
     return (
-        <div className="rounded-xl shadow-xl p-5 w-72 xs:w-96 lg:w-1/2 max-w-lg">
+        <div className="relative rounded-xl shadow-xl p-5 w-72 xs:w-96 lg:w-auto max-w-2xl">
             <h3 className="flex items-center gap-2">
                 <Code size={30} /> Skills
             </h3>

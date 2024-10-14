@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function About() {
     return (
         <section data-aos="fade-left" id="about">
-            <div className="h-full flex flex-col gap-4 items-center justify-center py-12">
+            <div className="h-full flex flex-col gap-12 items-center justify-center py-12 lg:px-12">
                 <h2 className="w-full">
                     About Me{" "}
                     <Image
@@ -18,8 +18,11 @@ export default function About() {
                     />
                 </h2>
                 <div className="flex flex-col gap-24">
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-20 lg:gap-36">
-                        <EducationCard />
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div className="relative">
+                            <div className="absolute -inset-2 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-blue-500 via-teal-800 to-green-500 opacity-50 blur-md"></div>
+                            <EducationCard />
+                        </div>
                         <Image
                             src="/educator.svg"
                             alt="books laptop education"
@@ -29,7 +32,7 @@ export default function About() {
                         />
                         {/* <GraduationCap size={300} className="md:w-1/2" /> */}
                     </div>
-                    <div className="flex flex-col gap-4 md:gap-20 lg:gap-36 md:flex-row items-center justify-center">
+                    <div className="flex flex-col gap-4 md:flex-row items-center justify-between">
                         <Image
                             src="/website.svg"
                             alt="coding computer"
@@ -38,7 +41,10 @@ export default function About() {
                             className="md:w-1/3"
                         />
                         {/* <Laptop size={300} className="md:w-1/2" /> */}
-                        <SkillsCard />
+                        <div className="relative">
+                            <div className="absolute -inset-2 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-blue-500 via-teal-800 to-green-500 opacity-50 blur-md"></div>
+                            <SkillsCard />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -41,7 +41,7 @@ export default function Hero() {
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Link
                             href="#contact"
-                            className="p-4 w-48 sm:w-fit m-auto rounded-lg text-background bg-primary border-foreground border-[1px] shadow-green-3d hover:bg-[rgba(0,76,76,0.9)] text-xs xl:text-base text-center"
+                            className="p-4 w-48 sm:w-fit m-auto rounded-lg text-background bg-primary border-foreground border-[1px] shadow-green-3d hover:shadow-green-4d hover:scale-105 hover:bg-[rgba(0,76,76,0.9)] text-xs xl:text-base text-center"
                         >
                             Let&apos;s Work Together
                         </Link>
@@ -65,7 +65,7 @@ export default function Hero() {
                 </div>
 
                 <div className="relative hidden lg:block">
-                    <div className="absolute -inset-2 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-blue-500 via-teal-800 to-green-500 opacity-75 blur overflow-hidden"></div>
+                    <div className="absolute -inset-2 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-blue-500 via-teal-800 to-green-500 opacity-75 blur-md overflow-hidden"></div>
                     <Headshot />
                 </div>
             </div>

@@ -21,7 +21,7 @@ export default function PricingCard({
 }: PricingCardProps) {
     return (
         <div
-            className={`flex flex-col gap-4 items-center p-4 bg-foreground text-background rounded-3xl h-auto lg++:h-[950px] xl:h-[900px] 2xl:h-[830px]  min-w-lg xs:min-w-[350px] shadow-lg ${price === "2500" && "lg++:border-primary lg++:border-2 lg++:shadow-even lg++:shadow-primary lg++:translate-y-[-20px] lg++:scale-105"}`}
+            className={`flex flex-col gap-4 items-center p-4 bg-foreground text-background rounded-3xl h-auto lg++:h-[950px] xl:h-[900px] 2xl:h-[870px]  min-w-lg xs:min-w-[350px] shadow-lg ${price === "2500" && "lg++:border-primary lg++:border-2 lg++:shadow-even lg++:shadow-primary lg++:translate-y-[-20px] lg++:scale-105"}`}
         >
             <h3 className="text-center">{name}</h3>
             <div className="text-center">

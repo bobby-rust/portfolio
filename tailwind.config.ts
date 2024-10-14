@@ -26,6 +26,7 @@ const config: Config = {
             boxShadow: {
                 even: "0px 0px 0px 0px rgba(0, 0, 0, 0.5)",
                 "green-3d": "3px 3px 2px 2px rgba(0, 255, 0, 1)",
+                "green-4d": "6px 6px 2px 2px rgba(0, 255, 0, 1)",
                 gradient:
                     "0 4px 20px rgba(0, 0, 255, 1), 0 6px 50px rgba(255, 0, 0, 1), 0 60px 60px rgba(0, 255, 0, 1)",
                 "blue-gradient": "0 4px 20px rgba(0, 0, 255, 1)",

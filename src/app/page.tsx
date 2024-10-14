@@ -16,10 +16,10 @@ export default function Home() {
             <div className="flex justify-center items-center w-full h-full bg-cover">
                 <About />
             </div>
-            <Contact />
             <div className="bg-foreground text-background flex justify-center items-center">
                 <Services />
             </div>
+            <Contact />
             <Pricing />
         </div>
     );
