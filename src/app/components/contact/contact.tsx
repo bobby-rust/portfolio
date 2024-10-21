@@ -162,11 +162,14 @@ export default function Contact() {
                                     className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
                                 />
                             </div>
-                            <div className="hidden lg:flex flex-col text-xl font-semibold lg:w-2/3 xl:w-1/2 justify-center text-center">
-                                <div>
+                            <div className="hidden lg:flex flex-col text-sm font-semibold lg:w-2/3 xl:w-1/2">
+                                <div className="flex gap-2 justify-center items-center">
                                     {" "}
                                     <Mail className="inline" />
-                                    You can email me at bobby.rust121@gmail.com
+                                    <span>
+                                        You can email me at
+                                        bobby.rust121@gmail.com
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -190,7 +193,7 @@ export default function Contact() {
                             <button
                                 type="submit"
                                 disabled={disableSubmit}
-                                className={`flex gap-2 justify-center p-3 w-full sm:w-48 rounded-lg text-background mt-2 border-2 border-gray-400 ${disableSubmit ? "bg-gray-400 cursor-not-allowed" : "bg-secondary-dark  hover:shadow-md hover:bg-[rgba(107,71,71,0.9)]"}`}
+                                className={`flex gap-2 justify-center p-3 w-full sm:w-48 rounded-lg text-background mt-2 border-2 border-gray-400 ${disableSubmit ? "bg-gray-400 cursor-not-allowed" : "bg-secondary hover:shadow-lg hover:opacity-90"}`}
                             >
                                 <div className="w-1/4 flex justify-end">
                                     {disableSubmit ? (

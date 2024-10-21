@@ -5,7 +5,7 @@ export default function Services() {
         <section
             data-aos="fade-down"
             id="services"
-            className="py-0 my-0 flex items-center justify-center"
+            className="py-0 my-0 flex items-center justify-center text-background"
         >
             <div className="w-full flex flex-col items-center lg:items-start gap-4">
                 <h2>Services</h2>
@@ -14,7 +14,7 @@ export default function Services() {
                     <div className="md:w-1/3 flex justify-center items-center">
                         <div className="p-5 flex flex-col gap-4">
                             <Laptop size={40} className="min-h-[40px]" />
-                            <h4 className="font-semibold text-lg">
+                            <h4 className="font-bold text-lg">
                                 Custom Website Design & Development
                             </h4>
                             <p>
@@ -46,7 +46,7 @@ export default function Services() {
                                 size={40}
                                 className="min-h-[40px]"
                             />
-                            <h4 className="font-semibold text-lg">
+                            <h4 className="font-bold text-lg">
                                 Full Project Lifecycle Management
                             </h4>
                             <p>
@@ -74,7 +74,7 @@ export default function Services() {
                     <div className="md:w-1/3 flex justify-center items-center">
                         <div className="p-5 flex flex-col gap-4">
                             <Cloud size={40} className="min-h-[40px]" />
-                            <h4 className="font-semibold text-lg">
+                            <h4 className="font-bold text-lg">
                                 Hosting, Maintenance, & Support
                             </h4>
                             <p>

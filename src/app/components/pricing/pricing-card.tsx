@@ -43,13 +43,13 @@ export default function PricingCard({
                 {features.map((feature: string, i: number) => {
                     return (
                         <li key={i} className="flex leading-5 gap-1">
-                            <CircleCheck className="flex-shrink-0 text-primary" />
+                            <CircleCheck className="flex-shrink-0 text-green-600" />
                             {feature}
                         </li>
                     );
                 })}
             </ul>
-            <button className="bg-primary p-2 rounded-lg text-background shadow-even shadow-background  border-[1px] border-background">
+            <button className="bg-secondary p-2 rounded-lg shadow-even shadow-background  border-[1px] border-background hover:shadow-xl hover:opacity-90">
                 Get Started
             </button>
         </div>

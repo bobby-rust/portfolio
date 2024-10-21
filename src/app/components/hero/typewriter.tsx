@@ -46,7 +46,7 @@ export default function Typewriter({ words }: TypewriterProps) {
     }, [ch, forward, word, words]);
 
     return (
-        <div className="inline-flex items-center whitespace-pre bg-teal font-semibold text-primary tracking-tighter rounded-lg ml-1 shadow-lg">
+        <div className="inline-flex items-center whitespace-pre bg-accent font-semibold text-background tracking-tighter rounded-lg ml-1 shadow-lg">
             <span>&nbsp;</span>
             <span>{str}</span>
             <div className="h-6 w-[1px] bg-foreground animate-fade-in-out ml-1"></div>
