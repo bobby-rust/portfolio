@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { ToastProvider } from "@/app/components/toast/toast-context";
 import Footer from "./components/footer/footer";
 import AOSInit from "@/app/components/aos/aos-init";
+import Navbar from "./components/navbar/navbar";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -24,7 +25,7 @@ export default function RootLayout({
             >
                 <AOSInit />
                 <ToastProvider>
-                    {/* <Navbar /> */}
+                    <Navbar />
                     <main>{children}</main>
                     <footer>
                         <Footer />

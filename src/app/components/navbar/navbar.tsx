@@ -20,6 +20,11 @@ export default function Navbar() {
                 </div>
                 <ul className="hidden md:flex border-[1px] border-gray-400 bg-black px-4 py-2 rounded-3xl text-[#fafbf6] gap-2 md:gap-8 xl:gap-12 text-xs xl:text-base">
                     <li className="hover:cursor-pointer hover:underline">
+                        <Link href="/" className="flex">
+                            <NavButton text="Home" />
+                        </Link>
+                    </li>
+                    <li className="hover:cursor-pointer hover:underline">
                         <Link href="#about" className="flex">
                             <NavButton text="About" />
                         </Link>
@@ -38,6 +43,11 @@ export default function Navbar() {
                     <li className="hover:cursor-pointer hover:underline w-1/3">
                         <Link href="#contact">
                             <NavButton text="Contact" />
+                        </Link>
+                    </li>
+                    <li className="hover:cursor-pointer hover:underline w-1/3">
+                        <Link href="/blog">
+                            <NavButton text="Blog" />
                         </Link>
                     </li>
                 </ul>
