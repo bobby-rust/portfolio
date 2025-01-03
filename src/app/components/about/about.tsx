@@ -18,11 +18,8 @@ export default function About() {
                     />
                 </h2>
                 <div className="flex flex-col gap-24">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                        <div className="relative">
-                            <div className="absolute -inset-2 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-blue-500 via-teal-800 to-green-500 opacity-20 blur-sm"></div>
-                            <EducationCard />
-                        </div>
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+                        <EducationCard />
                         <Image
                             src="/educator.svg"
                             alt="books laptop education"
@@ -30,9 +27,8 @@ export default function About() {
                             height={500}
                             className="md:w-1/3"
                         />
-                        {/* <GraduationCap size={300} className="md:w-1/2" /> */}
                     </div>
-                    <div className="flex flex-col gap-4 md:flex-row items-center justify-between">
+                    <div className="flex flex-col gap-10 md:flex-row items-center justify-between">
                         <Image
                             src="/website.svg"
                             alt="coding computer"
@@ -40,11 +36,7 @@ export default function About() {
                             height={200}
                             className="md:w-1/3"
                         />
-                        {/* <Laptop size={300} className="md:w-1/2" /> */}
-                        <div className="relative">
-                            <div className="absolute -inset-2 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-green-500 via-teal-800 to-blue-500 opacity-20 blur-sm"></div>
-                            <SkillsCard />
-                        </div>
+                        <SkillsCard />
                     </div>
                 </div>
             </div>

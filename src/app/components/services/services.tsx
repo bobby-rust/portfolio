@@ -5,7 +5,7 @@ export default function Services() {
         <section
             data-aos="fade-down"
             id="services"
-            className="py-0 my-0 flex items-center justify-center text-background"
+            className="py-10 my-0 flex bg-slate-700 items-center justify-center text-background"
         >
             <div className="w-full flex flex-col items-center lg:items-start gap-4">
                 <h2>Services</h2>

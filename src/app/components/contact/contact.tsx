@@ -4,6 +4,7 @@ import { useState, ChangeEvent } from "react";
 import { Mail, SendHorizontal } from "lucide-react";
 import { useToast } from "@/app/components/toast/toast-context";
 import Link from "next/link";
+import Image from "next/image";
 
 interface ContactForm {
     name: string;
@@ -105,7 +106,7 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} className="w-full">
                     <div className="flex flex-col gap-2">
                         <div className="flex">
-                            <div className="flex flex-col lg:w-2/3 xl:w-1/2">
+                            <div className="flex flex-col w-full lg:w-2/3 xl:w-1/2">
                                 {/* Name */}
                                 <label
                                     htmlFor="name"
@@ -167,9 +168,16 @@ export default function Contact() {
                                     {" "}
                                     <Mail className="inline" />
                                     <span>
-                                        You can email me at
-                                        bobby.rust121@gmail.com
+                                        You can email me at contact@robrust.dev
                                     </span>
+                                </div>
+                                <div className="flex justify-center items-center">
+                                    <Image
+                                        src="/solution_mindset.svg"
+                                        alt="solution mindset"
+                                        width={500}
+                                        height={500}
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -229,7 +237,7 @@ export default function Contact() {
                                 <div className="w-1/4"></div>
                             </button>
                             <Link
-                                href="mailto:bobby.rust121@gmail.com"
+                                href="mailto:contact@robrust.dev"
                                 className="hover:underline mt-2 w-full text-center border-2 border-gray-400 p-3 sm:border-none rounded-lg flex justify-center  sm:w-auto gap-2"
                             >
                                 <Mail /> Send me an email directly

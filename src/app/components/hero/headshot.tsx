@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Headshot() {
     return (
-        <div className="h-60 w-60 2xl:w-80 2xl:h-80 relative overflow-hidden rounded-3xl bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-accent-faded via-secondary to-primary-faded">
+        <div className="h-60 w-60 2xl:w-80 2xl:h-80 overflow-hidden rounded-3xl">
             <Image
                 src="/headshot-transparent.png"
                 alt="professional headshot"

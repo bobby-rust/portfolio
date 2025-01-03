@@ -51,11 +51,27 @@ const config: Config = {
                     "0%": { transform: "translateY(0)", opacity: "1" },
                     "100%": { transform: "translateY(100px)", opacity: "0" },
                 },
+
+                "rotate-chevron-up": {
+                    "0%": { transform: "rotate(0deg)" },
+                    "100%": { transform: "rotate(180deg)" },
+                },
+                "rotate-chevron-down": {
+                    "0%": { transform: "rotate(180deg)" },
+                    "100%": { transform: "rotate(0deg)" },
+                },
+                "open-accordion": {},
+                "close-accordion": {},
             },
             animation: {
                 "fade-in-out": "fade-in-out 0.8s linear infinite",
                 rise: "rise 0.2s ease-out forwards",
                 fall: "fall 0.2s ease-out forwards",
+                "rotate-chevron-up": "rotate-chevron-up 0.3s ease-out forwards",
+                "rotate-chevron-down":
+                    "rotate-chevron-down 0.3s ease-out forwards",
+                "open-accordion": "open-accordion 0.3s ease-out forwards",
+                "close-accordion": "close-accordion 0.3s ease-out forwards",
             },
             backgroundImage: {
                 "geometric-mesh": "url('/ccchaos.svg')",

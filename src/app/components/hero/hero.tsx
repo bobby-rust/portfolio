@@ -27,7 +27,6 @@ export default function Hero() {
                         </span>
                     </h1>
                     <div className="relative lg:hidden">
-                        <div className="absolute -inset-2 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-accent via-secondary to-primary opacity-75 blur-md overflow-hidden"></div>
                         <Headshot />
                     </div>
                     <div className="sm:text-2xl pt-4">
@@ -64,7 +63,6 @@ export default function Hero() {
                 </div>
 
                 <div className="relative hidden lg:block">
-                    <div className="absolute -inset-2 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-accent via-secondary to-primary opacity-75 blur-md overflow-hidden"></div>
                     <Headshot />
                 </div>
             </div>
