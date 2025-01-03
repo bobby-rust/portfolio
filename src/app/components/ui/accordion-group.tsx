@@ -9,6 +9,7 @@ interface AccordionGroupProps {
     accordions: Accordion[];
 }
 
-export default function AccordionGroup(props: AccordionGroupProps) {
+export default function AccordionGroup({ accordions }: AccordionGroupProps) {
+    console.log(accordions);
     return <div>accordion-group</div>;
 }
