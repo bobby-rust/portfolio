@@ -45,8 +45,11 @@ export default function Projects() {
         },
     ];
     return (
-        <div id="projects">
-            <h1>Projects</h1>
+        <section
+            id="projects"
+            className="py-10 my-0 flex flex-col gap-2 items-center justify-center"
+        >
+            <h2>Projects</h2>
             <div className="w-full flex flex-col gap-5">
                 {projects.map((project: Project, i: number) => {
                     return (
@@ -60,6 +63,6 @@ export default function Projects() {
                     );
                 })}
             </div>
-        </div>
+        </section>
     );
 }

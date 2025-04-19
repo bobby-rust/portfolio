@@ -35,7 +35,6 @@ export default function Navbar() {
                 </ul>
                 <MobileMenu />
             </div>
-            {/* <div className="h-[1px] w-full bg-gray"></div> */}
         </nav>
     );
 }

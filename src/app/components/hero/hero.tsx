@@ -19,7 +19,7 @@ export default function Hero() {
                     <p className="text-2xl font-semibold">
                         Welcome to my site!
                     </p>
-                    <h1 className="relative text-9xl sm:text-3xl md:text-9xl lg:text-9xl 3xl:text-8xl tracking-tighter">
+                    <h1 className="relative text-4xl sm:text-5xl md:text-6xl lg:text-7xl 3xl:text-8xl tracking-tighter">
                         👋 <span className="font-bold">Hey, I&apos;m Rob</span>
                     </h1>
                     <div className="relative lg:hidden">
