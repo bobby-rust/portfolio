@@ -46,7 +46,7 @@ export default function Projects() {
             title: "WeighWise",
             url: "https://github.com/bobby-rust/WeighWise.git",
             description:
-                "A Shopify app allowing stores to sell by weight, developed for and used by 8 O'Clock Ranch & built with Remix",
+                "A Shopify app allowing stores to sell by weight, developed for 8 O'Clock Ranch & built with Remix",
             images: ["/weighwise-demo.png"],
             date: "December 2024 - January 2025",
         },
