@@ -21,7 +21,7 @@ const SKILLS = [
 
 export default function SkillsCard() {
     return (
-        <div className="border-2 rounded-xl shadow-xl border-gray-400 p-5 w-72 xs:w-96 lg:w-1/2">
+        <div className="relative rounded-xl shadow-xl p-5 xs:w-96 lg:w-auto max-w-2xl">
             <h3 className="flex items-center gap-2">
                 <Code size={30} /> Skills
             </h3>
@@ -30,7 +30,7 @@ export default function SkillsCard() {
                     I&apos;m a <b>full-stack developer</b> and{" "}
                     <b>software engineer</b> passionate about solving tech
                     challenges and building <b>custom websites.</b> With
-                    expertise in React, Next.js,TypeScript, and more, I turn
+                    expertise in React, Next.js, TypeScript, and more, I turn
                     ideas into <b>seamless digital experiences.</b>
                     Whether it&apos;s creating a new website or providing{" "}
                     <b>tech support</b>, I&apos;m here to help you succeed.

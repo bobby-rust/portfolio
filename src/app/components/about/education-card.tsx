@@ -1,4 +1,4 @@
-import { GraduationCap, Star, StarHalf } from "lucide-react";
+import { GraduationCap, Star } from "lucide-react";
 import Tag from "./tag";
 
 const COURSES = [
@@ -17,7 +17,7 @@ const COURSES = [
 
 export default function EducationCard() {
     return (
-        <div className="border-2 rounded-xl shadow-xl border-gray-400 p-5 w-72 xs:w-96 lg:w-1/2">
+        <div className="relative rounded-xl shadow-xl border-gray-400 p-5 xs:w-96 lg:w-auto max-w-2xl">
             <h3 className="flex items-center gap-2">
                 <GraduationCap size={30} /> Education
             </h3>
@@ -33,10 +33,10 @@ export default function EducationCard() {
                 <p className="flex gap-2">
                     <span className="font-medium">GPA - 3.96 </span>
                     <span className="flex">
-                        <Star />
-                        <Star />
-                        <Star />
-                        <StarHalf />
+                        <Star fill="yellow" color="yellow" />
+                        <Star fill="yellow" color="yellow" />
+                        <Star fill="yellow" color="yellow" />
+                        <Star fill="yellow" color="yellow" />
                     </span>
                 </p>
                 <h4 className="font-semibold">Completed Courses</h4>

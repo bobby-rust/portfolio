@@ -3,13 +3,27 @@
 @tailwind utilities;
 
 :root {
-    --background: #fafbf6;
-    --foreground: #333;
-    --primary: #004c4c;
-    --secondary-light: #966;
-    --secondary-dark: #6b4747;
-    --teal: #82fff5;
-    --accent: #ffa93f;
+    /* --background: #fafbf6; */
+    --background: #d8d2c2;
+    /* --background: #b1f2fc; */
+    /* --foreground: #333; */
+    /* --primary: #004c4c; */
+    /* --secondary-light: #966; */
+    /* --secondary-dark: #6b4747; */
+    /* --teal: #82fff5; */
+    /* --accent: #ffa93f; */
+    /* --tw-shadow-color: #0000ff; */
+    /* --light-background: #c8d9db; */
+    --light-background: #d9dfc6;
+    --light-foreground: #333;
+    --light-primary: #133e42;
+    --primary-faded: rgba(19, 62, 66, 0.5);
+    --accent-faded: rgb(108, 99, 255, 0.5);
+    --light-secondary: #396f75;
+    --gray: #374241;
+    --accent: #6c63ff;
+    /* --teal: #60a8a0; */
+    /* --dark-green: #203331; */
 }
 
 body {
@@ -48,13 +62,13 @@ section {
 @media (width >=1024px) {
     section {
         min-height: 80vh;
-        width: 75%;
+        width: 90%;
     }
 }
 
 @media (width >=1536px) {
     section {
-        width: 65%;
+        width: 80%;
     }
 }
 
@@ -76,4 +90,8 @@ section h3 {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 600;
+}
+
+#services b {
+    color: var(--light-background);
 }

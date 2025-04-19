@@ -5,27 +5,36 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <section id="about">
-            <div className="w-full h-full flex flex-col items-center lg:items-start">
-                <h2>About Me</h2>
+        <section data-aos="fade-left" id="about">
+            <div className="h-full flex flex-col gap-12 items-center justify-center py-12 lg:px-12">
+                <h2 className="w-full">
+                    About Me{" "}
+                    <Image
+                        src="/orange-star.svg"
+                        width={100}
+                        height={100}
+                        alt="an orange star"
+                        className="inline absolute top-0 left-20"
+                    />
+                </h2>
                 <div className="flex flex-col gap-24">
-                    <div className="flex flex-col md:flex-row items-center justify-center">
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-10">
                         <EducationCard />
                         <Image
-                            src="/education.png"
+                            src="/educator.svg"
                             alt="books laptop education"
                             width={500}
                             height={500}
-                            className="md:w-1/2"
+                            className="md:w-1/3"
                         />
                     </div>
-                    <div className="flex flex-col md:flex-row items-center justify-center">
+                    <div className="flex flex-col gap-10 md:flex-row items-center justify-between">
                         <Image
-                            src="/computer.png"
+                            src="/website.svg"
                             alt="coding computer"
-                            width={570}
-                            height={438}
-                            className="md:w-1/2"
+                            width={400}
+                            height={200}
+                            className="md:w-1/3"
                         />
                         <SkillsCard />
                     </div>

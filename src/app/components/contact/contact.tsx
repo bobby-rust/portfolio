@@ -4,12 +4,21 @@ import { useState, ChangeEvent } from "react";
 import { Mail, SendHorizontal } from "lucide-react";
 import { useToast } from "@/app/components/toast/toast-context";
 import Link from "next/link";
+import Image from "next/image";
 
 interface ContactForm {
     name: string;
     email: string;
+    pricingPlan: PricingPlan;
     subject: string;
     body: string;
+}
+
+enum PricingPlan {
+    UNSELECTED = "",
+    BASIC = "basic",
+    STANDARD = "standard",
+    CUSTOM = "custom",
 }
 
 export default function Contact() {
@@ -19,6 +28,7 @@ export default function Contact() {
     const [form, setForm] = useState<ContactForm>({
         name: "",
         email: "",
+        pricingPlan: PricingPlan.UNSELECTED,
         subject: "",
         body: "",
     });
@@ -77,13 +87,14 @@ export default function Contact() {
         setForm({
             name: "",
             email: "",
+            pricingPlan: PricingPlan.UNSELECTED,
             subject: "",
             body: "",
         });
     }
 
     return (
-        <section id="contact" className="pt-48 lg:px-36">
+        <section data-aos="fade-right" id="contact" className="pt-48 lg:px-36">
             <div className="w-full h-full flex flex-col items-center lg:items-start gap-4">
                 <h2>Contact</h2>
                 <p className="text-gray-600 text-lg text-center lg:text-left">
@@ -94,58 +105,82 @@ export default function Contact() {
                 </p>
                 <form onSubmit={handleSubmit} className="w-full">
                     <div className="flex flex-col gap-2">
-                        {/* Name */}
-                        <label htmlFor="name" className="font-semibold text-lg">
-                            Name
-                            <p className="font-normal text-base text-gray-600">
-                                What can I call you?
-                            </p>
-                        </label>
-                        <input
-                            name="name"
-                            type="text"
-                            placeholder="Enter your name"
-                            value={form.name}
-                            onChange={handleFormChange}
-                            className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
-                        />
-                        {/* Email */}
-                        <label
-                            htmlFor="email"
-                            className="font-semibold text-lg"
-                        >
-                            Email
-                            <p className="font-normal text-base text-gray-600">
-                                Where can I get back to you?
-                            </p>
-                        </label>
-                        <input
-                            name="email"
-                            type="email"
-                            placeholder="Enter your email"
-                            value={form.email}
-                            onChange={handleFormChange}
-                            className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
-                        />
+                        <div className="flex">
+                            <div className="flex flex-col w-full lg:w-2/3 xl:w-1/2">
+                                {/* Name */}
+                                <label
+                                    htmlFor="name"
+                                    className="font-semibold text-lg"
+                                >
+                                    Name
+                                    <p className="font-normal text-base text-gray-600">
+                                        What can I call you?
+                                    </p>
+                                </label>
+                                <input
+                                    name="name"
+                                    type="text"
+                                    placeholder="Enter your name"
+                                    value={form.name}
+                                    onChange={handleFormChange}
+                                    className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
+                                />
+                                {/* Email */}
+                                <label
+                                    htmlFor="email"
+                                    className="font-semibold text-lg"
+                                >
+                                    Email
+                                    <p className="font-normal text-base text-gray-600">
+                                        Where can I get back to you?
+                                    </p>
+                                </label>
+                                <input
+                                    name="email"
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    value={form.email}
+                                    onChange={handleFormChange}
+                                    className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
+                                />
 
-                        {/* Subject */}
-                        <label
-                            htmlFor="subject"
-                            className="font-semibold text-lg"
-                        >
-                            Subject
-                            <p className="font-normal text-base text-gray-600">
-                                What&apos;s this about?
-                            </p>
-                        </label>
-                        <input
-                            name="subject"
-                            type="text"
-                            placeholder="Enter a subject"
-                            value={form.subject}
-                            onChange={handleFormChange}
-                            className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
-                        />
+                                {/* Subject */}
+                                <label
+                                    htmlFor="subject"
+                                    className="font-semibold text-lg"
+                                >
+                                    Subject
+                                    <p className="font-normal text-base text-gray-600">
+                                        What&apos;s this about?
+                                    </p>
+                                </label>
+                                <input
+                                    name="subject"
+                                    type="text"
+                                    placeholder="Enter a subject"
+                                    value={form.subject}
+                                    onChange={handleFormChange}
+                                    className="border-2 border-gray-400 rounded-lg h-10 p-3 bg-slate-700 text-background"
+                                />
+                            </div>
+                            <div className="hidden lg:flex flex-col text-sm font-semibold lg:w-2/3 xl:w-1/2">
+                                <div className="flex gap-2 justify-center items-center">
+                                    {" "}
+                                    <Mail className="inline" />
+                                    <span>
+                                        You can email me at contact@robrust.dev
+                                    </span>
+                                </div>
+                                <div className="flex justify-center items-center">
+                                    <Image
+                                        src="/solution_mindset.svg"
+                                        alt="solution mindset"
+                                        width={500}
+                                        height={500}
+                                    />
+                                </div>
+                            </div>
+                        </div>
                         {/* Body */}
                         <label htmlFor="body" className="font-semibold text-lg">
                             Message
@@ -166,7 +201,7 @@ export default function Contact() {
                             <button
                                 type="submit"
                                 disabled={disableSubmit}
-                                className={`flex gap-2 justify-center p-3 w-full sm:w-48 rounded-lg text-background mt-2 border-2 border-gray-400 ${disableSubmit ? "bg-gray-400 cursor-not-allowed" : "bg-secondary-dark  hover:shadow-md hover:bg-[rgba(107,71,71,0.9)]"}`}
+                                className={`flex gap-2 justify-center p-3 w-full sm:w-48 rounded-lg text-background mt-2 border-2 border-gray-400 ${disableSubmit ? "bg-gray-400 cursor-not-allowed" : "bg-secondary hover:shadow-lg hover:opacity-90"}`}
                             >
                                 <div className="w-1/4 flex justify-end">
                                     {disableSubmit ? (
@@ -202,7 +237,7 @@ export default function Contact() {
                                 <div className="w-1/4"></div>
                             </button>
                             <Link
-                                href="mailto:bobby.rust121@gmail.com"
+                                href="mailto:contact@robrust.dev"
                                 className="hover:underline mt-2 w-full text-center border-2 border-gray-400 p-3 sm:border-none rounded-lg flex justify-center  sm:w-auto gap-2"
                             >
                                 <Mail /> Send me an email directly
