@@ -64,7 +64,7 @@ export default function Projects() {
             id="projects"
             className="py-10 my-0 flex flex-col gap-2 items-center justify-center"
         >
-            <h2>Selected Work</h2>
+            <h2 className="text-center w-full lg++:text-left">Selected Work</h2>
             <div className="w-full flex flex-col gap-5">
                 {projects.map((project: Project, i: number) => {
                     return (
