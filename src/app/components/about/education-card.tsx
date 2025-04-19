@@ -32,7 +32,7 @@ export default function EducationCard() {
                     <p className="text-gray-600">January 2022 - August 2025</p>
                 </div>
                 <p className="flex gap-2">
-                    <span className="font-medium">GPA - 3.96 </span>
+                    <span className="font-medium">GPA - 3.96 / 4.0 </span>
                     <span className="flex">
                         <Star fill="yellow" color="yellow" />
                         <Star fill="yellow" color="yellow" />
