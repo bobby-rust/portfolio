@@ -5,6 +5,7 @@ import Contact from "@/app/components/contact/contact";
 import Services from "@/app/components/services/services";
 import Pricing from "@/app/components/pricing/pricing";
 import Navbar from "./components/navbar/navbar";
+import Projects from "./components/projects/projects";
 
 export default function Home() {
 	return (
@@ -16,7 +17,10 @@ export default function Home() {
 			<div className="flex justify-center items-center w-full h-full bg-cover">
 				<About />
 			</div>
-			<div className="bg-gray text-background flex justify-center items-center">
+			<div>
+				<Projects />
+			</div>
+			<div className="bg-accent text-background flex justify-center items-center">
 				<Services />
 			</div>
 			<Contact />
