@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Headshot() {
     return (
-        <div className="h-60 w-60 2xl:w-80 2xl:h-80 overflow-hidden rounded-3xl">
+        <div className="relative h-60 w-60 2xl:w-96 2xl:h-96 overflow-hidden rounded-3xl border-2 border-accent shadow-xl">
             <Image
                 src="/headshot-transparent.png"
                 alt="professional headshot"

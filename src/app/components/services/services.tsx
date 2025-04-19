@@ -3,7 +3,6 @@ import { Laptop, Cloud, ChartNoAxesColumnIncreasing } from "lucide-react";
 export default function Services() {
     return (
         <section
-            data-aos="fade-down"
             id="services"
             className="py-10 my-0 flex bg-accent items-center justify-center text-background"
         >
