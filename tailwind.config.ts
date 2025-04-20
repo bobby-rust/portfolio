@@ -60,8 +60,14 @@ const config: Config = {
                     "0%": { transform: "rotate(180deg)" },
                     "100%": { transform: "rotate(0deg)" },
                 },
-                "open-accordion": {},
-                "close-accordion": {},
+                "open-accordion": {
+                    "0%": { "max-height": "0px" },
+                    "100%": { "max-height": "1000px" },
+                },
+                "close-accordion": {
+                    "0%": { "max-height": "1000px" },
+                    "100%": { "max-height": "0px" },
+                },
             },
             animation: {
                 "fade-in-out": "fade-in-out 0.8s linear infinite",
