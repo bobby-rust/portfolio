@@ -9,14 +9,12 @@ const SKILLS = [
     "React",
     "NextJS",
     "TailwindCSS",
-    "Golang",
-    "Java",
     "Express",
     "MongoDB",
     "PostgreSQL",
+    "Python",
+    "C/C++",
     "Shopify",
-    "Wordpress",
-    "WooCommerce",
 ];
 
 export default function SkillsCard() {
