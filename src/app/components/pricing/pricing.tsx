@@ -14,8 +14,11 @@ export default function Pricing() {
                 </h3>
                 <h2 className="lg++:text-left text-center">FAQs</h2>
                 <div>
-                    <Accordion heading="I want a basic website showcasing my business and services" />
-                    <Accordion heading="Help! My computer is broken!" />
+                    <Accordion
+                        heading="I want a basic website showcasing my business and services"
+                        text=""
+                    />
+                    <Accordion heading="Help! My computer is broken!" text="" />
                 </div>
                 <p className="text-center font-semibold">
                     Not what you&apos;re looking for?{" "}
