@@ -13,7 +13,7 @@ export default function Pricing() {
                     $30/hr Tech Support
                 </h3>
                 <h2 className="lg++:text-left text-center">FAQs</h2>
-                <div>
+                <div className="flex flex-col gap-5">
                     <Accordion
                         heading="I want a basic website showcasing my business and services"
                         text=""

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --background: #fafbf6;
+    --background: #fff;
     /* --background: #fffaee; */
     /* --background: #b1f2fc; */
     /* --foreground: #333; */
@@ -14,7 +14,7 @@
     /* --accent: #ffa93f; */
     /* --tw-shadow-color: #0000ff; */
     /* --light-background: #c8d9db; */
-    --light-background: #d9dfc6;
+    --light-background: #fff;
     --light-foreground: #333;
     --light-primary: #133e42;
     --primary-faded: rgba(19, 62, 66, 0.5);
