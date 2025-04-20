@@ -10,10 +10,10 @@ interface AccordionProps {
 export default function Accordion({ heading, text }: AccordionProps) {
     const [open, setOpen] = useState(false);
     return (
-        <div className="flex flex-col border-t-2 border-b-2 border-slate-500 p-5">
+        <div className="flex flex-col border-t-2 border-slate-500 p-5">
             <div
                 onClick={() => setOpen(!open)}
-                className="flex justify-between hover:underline hover:cursor-pointer items-center"
+                className="flex justify-between gap-5 hover:underline hover:cursor-pointer items-center"
             >
                 <h3>{heading}</h3>{" "}
                 <ChevronDown

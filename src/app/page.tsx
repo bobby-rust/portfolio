@@ -31,8 +31,8 @@ export default function Home() {
             <div className="bg-accent text-background flex justify-center items-center">
                 <Services />
             </div>
-            <Contact />
             <Pricing />
+            <Contact />
         </div>
     );
 }

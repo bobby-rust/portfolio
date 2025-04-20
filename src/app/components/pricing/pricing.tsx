@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Pricing() {
     return (
-        <section data-aos="fade-up">
+        <section id="pricing" data-aos="fade-up">
             <div className="flex flex-col gap-4">
                 <h2 className="lg++:text-left text-center">Pricing</h2>
                 <h3 className="lg++:text-left text-center">
@@ -13,7 +13,7 @@ export default function Pricing() {
                     $30/hr Tech Support
                 </h3>
                 <h2 className="lg++:text-left text-center">FAQs</h2>
-                <div className="flex flex-col gap-5">
+                <div>
                     <Accordion
                         heading="I want a basic website showcasing my business and services"
                         text=""
