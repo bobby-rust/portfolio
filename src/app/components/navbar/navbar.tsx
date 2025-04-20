@@ -6,7 +6,7 @@ import NavButton from "./nav-button";
 export default function Navbar() {
     return (
         <nav className="fixed flex mb-20 z-50 h-20 flex-col justify-center items-center w-screen">
-            <div className="h-20 w-full flex justify-center items-center px-4 bg-background/60 backdrop-blur-sm">
+            <div className="h-20 w-full flex justify-center items-center px-4 bg-black/60 text-background backdrop-blur-sm">
                 <ul className="hidden md:flex px-4 py-2 gap-2 md:gap-8 xl:gap-12 text-xs xl:text-base">
                     <li className="hover:cursor-pointer hover:underline">
                         <Link href="#about" className="flex">

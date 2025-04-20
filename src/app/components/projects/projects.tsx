@@ -15,15 +15,8 @@ export default function Projects() {
             title: "QueueSocial",
             url: "https://queuesocial.robrust.dev",
             description:
-                "A simple social media post scheduler for Facebook built with React & Express",
+                "A social media post scheduler for Facebook built with React & Express",
             images: ["/queuesocial-home.png"],
-            date: "March 2025 - April 2025",
-        },
-        {
-            title: "Pitkit",
-            url: "https://github.com/bobby-rust/MXBModManager/releases",
-            description: "A mod manager for MX Bikes built with Electron",
-            images: ["/mxb-mod-manager.png"],
             date: "March 2025 - April 2025",
         },
         {
@@ -33,6 +26,14 @@ export default function Projects() {
                 "A CLI based tool that uses a directed acyclic graph to generate university course schedules built with C++",
             images: ["/dag-course-scheduler.png"],
             date: "March 2025",
+        },
+
+        {
+            title: "Pitkit",
+            url: "https://github.com/bobby-rust/MXBModManager/releases",
+            description: "A mod manager for MX Bikes built with Electron",
+            images: ["/mxb-mod-manager.png"],
+            date: "March 2025 - April 2025",
         },
         {
             title: "8 O'Clock Ranch",

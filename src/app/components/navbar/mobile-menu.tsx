@@ -18,7 +18,9 @@ export default function MobileMenu() {
                     </button>
                     <ul className="flex flex-col justify-center gap-4 border-t-2 border-b-2 border-gray p-5 mt-6">
                         <Link href="#about">About</Link>
+                        <Link href="#projects">Projects</Link>
                         <Link href="#services">Services</Link>
+                        <Link href="#pricing">Pricing</Link>
                         <Link href="#contact">Contact</Link>
                     </ul>
                 </div>

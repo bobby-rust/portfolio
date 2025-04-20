@@ -6,6 +6,7 @@ import Services from "@/app/components/services/services";
 import Pricing from "@/app/components/pricing/pricing";
 import Navbar from "./components/navbar/navbar";
 import Projects from "./components/projects/projects";
+import CodeReview from "./components/code-review/code-review";
 
 export default function Home() {
     return (
@@ -13,6 +14,9 @@ export default function Home() {
             <div className="h-full w-full flex flex-col items-center">
                 <Navbar />
                 <Hero />
+            </div>
+            <div className="h-full w-full flex flex-col items-center">
+                <CodeReview />
             </div>
             <div className="flex justify-center items-center w-full h-full bg-cover">
                 <About />

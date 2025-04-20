@@ -24,7 +24,7 @@ export default function ProjectCard({
                 </h3>
                 <p className="text-gray">{date}</p>
             </div>
-            <p>{description}</p>
+            <p className="text-gray">{description}</p>
             <Image
                 src={images[0]}
                 width={1280}
