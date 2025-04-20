@@ -6,6 +6,7 @@ export default function ProjectCard({
     title,
     url,
     description,
+    extendedDescription,
     images,
     date,
 }: Project) {
@@ -31,6 +32,7 @@ export default function ProjectCard({
                 height={720}
                 alt={`${title} page`}
             />
+            <p className="text-gray">{extendedDescription}</p>
         </div>
     );
 }
