@@ -6,14 +6,14 @@ import Link from "next/link";
 export default function Hero() {
     const words = [
         "Software Engineer",
-        "Lifetime Student",
         "Full Stack Developer",
         "Web Developer",
         "Problem Solver",
         "Freelance Developer",
+        "Tech Support Guru"
     ];
     return (
-        <section data-aos="fade-up" className="my-5 lg:my-20 w-full">
+        <section className="my-5 lg:my-20 w-full">
             <div className="flex items-center gap-12">
                 <div className="flex flex-col h-full items-center lg:items-start justify-center gap-4">
                     <p className="text-2xl font-semibold">

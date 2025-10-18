@@ -13,7 +13,7 @@ export default function ProjectCard({
 	date,
 }: Project) {
 	return (
-		<div className="p-5 flex flex-col gap-5 border-slate-500 border-2 rounded-lg text-xs">
+		<div data-aos="fade-up" className="p-5 flex flex-col gap-5 border-slate-500 border-2 rounded-lg text-xs">
 			<div className="flex flex-col sm:flex-row justify-between w-full">
 				<div className="flex justify-between sm:justify-normal gap-2 w-full">
 					<h3 className="text-base sm:text-lg">

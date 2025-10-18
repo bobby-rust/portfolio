@@ -7,10 +7,11 @@ import { useEffect } from "react";
 export default function AOSInit() {
     useEffect(() => {
         AOS.init({
+            startEvent: "load",
             easing: "ease-out-cubic",
             once: true,
-            duration: 1000,
-            offset: 50,
+            duration: 500,
+            offset: 10,
         });
     }, []);
     return null;

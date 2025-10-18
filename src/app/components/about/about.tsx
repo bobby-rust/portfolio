@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function About() {
 	return (
-		<section data-aos="fade-left" id="about">
+		<section data-aos="fade-up" id="about">
 			<div className="h-full w-full flex flex-col gap-12 items-center justify-center py-12 lg:px-12">
 				<h2 className="w-full">About Me </h2>
 				<div className="flex flex-col gap-24 w-full">

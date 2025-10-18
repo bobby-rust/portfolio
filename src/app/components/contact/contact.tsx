@@ -88,7 +88,7 @@ export default function Contact() {
 	}
 
 	return (
-		<section data-aos="fade-right" id="contact" className="pt-48 lg:px-36">
+		<section data-aos="fade-up" id="contact" className="pt-48 lg:px-36">
 			<div className="w-full h-full flex flex-col items-center lg:items-start gap-4">
 				<h2>Contact</h2>
 				<p className="text-gray-600 text-lg text-center lg:text-left">
@@ -169,9 +169,8 @@ export default function Contact() {
 							<button
 								type="submit"
 								disabled={disableSubmit}
-								className={`flex gap-2 justify-center p-3 w-full sm:w-48 rounded-lg text-background mt-2 border-2 border-gray-400 ${
-									disableSubmit ? "bg-gray-400 cursor-not-allowed" : "bg-accent hover:shadow-lg hover:opacity-90"
-								}`}>
+								className={`flex gap-2 justify-center p-3 w-full sm:w-48 rounded-lg text-background mt-2 border-2 border-gray-400 ${disableSubmit ? "bg-gray-400 cursor-not-allowed" : "bg-accent hover:shadow-lg hover:opacity-90"
+									}`}>
 								<div className="w-1/4 flex justify-end">
 									{disableSubmit ? (
 										<svg className="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24">

@@ -3,6 +3,7 @@ import React from "react";
 export default function CodeReview() {
     return (
         <section
+            data-aos="fade-up"
             id="projects"
             className="py-10 my-0 flex flex-col gap-2 items-center justify-center"
         >

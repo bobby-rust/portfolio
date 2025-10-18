@@ -1,6 +1,7 @@
 export default function CoverLetter() {
     return (
         <section
+            data-aos="fade-up"
             id="cover-letter"
             className="py-10 my-0 flex flex-col gap-2 items-center justify-center"
         >

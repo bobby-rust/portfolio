@@ -4,6 +4,7 @@ export default function Services() {
     return (
         <section
             id="services"
+            data-aos="fade-up"
             className="py-10 my-0 flex bg-accent items-center justify-center text-background"
         >
             <div className="w-full flex flex-col items-center lg:items-start gap-4">
